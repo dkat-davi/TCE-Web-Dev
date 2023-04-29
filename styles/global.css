@@ -136,18 +136,26 @@ footer {
 
 footer ul {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     margin-bottom: 1rem;
 }
 
 footer li {
     list-style: none;
-    margin-right: 6rem;
 }
 
 footer li a{
     color: var(--terciary-color);
     text-decoration: none;
+}
+
+.footer-icons {
+    font-size: 2rem;
+}
+
+.footer-links {
+    display: none;
 }
 
 #footer-description, #footer-description a  {
@@ -218,4 +226,24 @@ footer li a{
         border: .1rem solid var(--terciary-color);
     }
 
+    footer ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    footer ul li a{
+        display: flex;
+        margin-left: 5rem;
+    }
+
+    .footer-icons {
+        display: none;
+    }
+
+    .footer-links {
+        display: block;
+        margin-left: .5rem;
+    }
 }
