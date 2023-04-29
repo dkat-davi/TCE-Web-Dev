@@ -14,38 +14,46 @@
 <body>
     <div class="container">
         <header>
-            <div id="content">
-                <h1>Projeto WEB</h1>
+                <h1><a href="#">Projeto WEB</a></h1>
+                
+                <nav>
+                    <ul>
+                        <li onclick="handleDropdonwMenuReferencesClick()"> 
+                            <span>Referências</span> <i class="fa-solid fa-angle-down" id="references-menu-icon">
+                        </i>
+                        </li>
+                        <li id="references">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="pages/about.html">Sobre nós</a>
+                        </li>
+                    </ul>
+                </nav>
+
                 <p>
                     <i class="fa-solid fa-bars" id="menu-icon"
-                    onclick="handleDropdonwMenuClick()"></i>
+                    onclick="handleDropdonwMenuClick('header nav', '#menu-icon')"></i>
                 </p>
-            </div>
-            <nav>
-                <ul>
-                    <li> <span>Referências</span> <i class="fa-solid fa-angle-down"></i>
-                    </li>
-                    <li id="references">
-                        <ul>
-                            <li>
-                                <a href="#">Tags HTML</a>
-                            </li>
-                            <li>
-                                <a href="#">Suporte dos navegadores</a>
-                            </li>
-                            <li>
-                                <a href="#">Atributos globais</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Sobre nós</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
         <main>
-            
+            <h1>Home</h1>
         </main>
         <footer>
         </footer>
