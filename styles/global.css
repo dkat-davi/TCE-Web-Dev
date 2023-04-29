@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     height: 100vh;
 }
 
@@ -31,7 +31,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;   
-    padding: 1rem 2rem;
+    padding: .1rem 2rem;
     background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
 }
 
@@ -40,6 +40,7 @@ header h1 a{
     font-weight: normal;
     font-size: 2rem;
     text-decoration: none;
+    cursor: pointer;
 }
 
 header #menu-icon {
@@ -124,6 +125,36 @@ header #references a {
     color: var(--terciary-color);
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+footer li {
+    list-style: none;
+    margin-right: 6rem;
+}
+
+footer li a{
+    color: var(--terciary-color);
+    text-decoration: none;
+}
+
+#footer-description, #footer-description a  {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
     #menu-icon {
         display: none;
@@ -139,7 +170,10 @@ header #references a {
 
     header nav{
         position: relative;
-        display: block;
+        left: 43%;
+        transform: translateX(-50%);
+
+        display: flex;
         
         padding: 0;
         margin: 0;
@@ -148,16 +182,17 @@ header #references a {
     }
 
     header nav ul {
+        position: relative;
+        right: -2%;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         justify-content: flex-end;
-        padding: .5rem;
     }
 
     nav ul li {
         padding: 0;
-        margin-right: 4rem;
+        margin-left: 4rem;
         width: 15rem;
         white-space: nowrap;
         font-weight: normal;

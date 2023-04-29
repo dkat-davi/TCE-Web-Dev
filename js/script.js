@@ -29,3 +29,13 @@ const handleDropdonwMenuReferencesClick = () => {
         dropdownMenuIcon.classList.add('fa-angle-down')
     }
 }
+
+window.addEventListener('resize', function() {
+    const menu = document.querySelector('nav')
+    const menuIcon = document.querySelector('#menu-icon')
+    const windowWidth = this.window.innerWidth
+
+    menu.style.display = windowWidth <= '768' ? 'none' : 'block'
+    menuIcon.classList.add('fa-bars')
+    menuIcon.classList.remove('fa-x')
+})
