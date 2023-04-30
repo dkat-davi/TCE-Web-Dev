@@ -22,6 +22,12 @@ body {
     background-color: var(--primary-color);
 }
 
+.container {
+    background-image: url(../assets/about/background-image.png);
+    background-repeat: no-repeat;
+    background-position: top -5rem left -10rem;
+}
+
 header {
     background-image: linear-gradient(to right, rgba(25, 52, 65, 0.5), rgba(62, 96, 111, 0.5));
 }
@@ -98,6 +104,8 @@ main .scroll-right-button i, main .scroll-left-button i{
     .container {
         display: flex;
         flex-direction: column;
+        background-position: top -5rem left -10rem;
+        background-size: 70rem 28rem;
     }
 
     main {
@@ -158,6 +166,7 @@ main .scroll-right-button i, main .scroll-left-button i{
     main .scroll-right-button i:hover, main .scroll-left-button i:hover{
         background-color: var(--secondary-color);
         color: var(--color-white);
+        cursor: pointer;
     }
 
     main .scroll-left-button i {

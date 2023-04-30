@@ -32,13 +32,17 @@ const handleDropdonwMenuReferencesClick = () => {
 
 const handleScrollRight = () => {
     const listItens = document.querySelector('.people')
-    listItens.scrollBy({ left: 350, top: 0, behavior: 'smooth' });
+    listItens.scrollBy({ 
+        left: 400, 
+        top: 0, 
+        behavior: 'smooth' 
+    });
 }
 
 const handleScrollLeft = () => {
     const listItens = document.querySelector('.people')
     listItens.scrollBy({
-        left: -350,
+        left: -400,
         top: 0,
         behavior: 'smooth'
       });
