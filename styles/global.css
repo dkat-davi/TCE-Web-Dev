@@ -27,7 +27,10 @@ body {
 }
 
 header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;   
@@ -126,8 +129,6 @@ header #references a {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     padding: 1rem 0;
     background-color: var(--secondary-color);

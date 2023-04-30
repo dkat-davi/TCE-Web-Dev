@@ -30,6 +30,20 @@ const handleDropdonwMenuReferencesClick = () => {
     }
 }
 
+const handleScrollRight = () => {
+    const listItens = document.querySelector('.people')
+    listItens.scrollBy({ left: 350, top: 0, behavior: 'smooth' });
+}
+
+const handleScrollLeft = () => {
+    const listItens = document.querySelector('.people')
+    listItens.scrollBy({
+        left: -350,
+        top: 0,
+        behavior: 'smooth'
+      });
+}
+
 window.addEventListener('resize', function() {
     const menu = document.querySelector('nav')
     const menuIcon = document.querySelector('#menu-icon')
