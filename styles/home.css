@@ -1,0 +1,49 @@
+section{
+    display: flex;
+    margin: auto;
+    background-image: url('../assets/background-home.png');
+    background-size: cover;
+    background-position: right bottom;
+}
+
+#first-page{
+    color: white;
+    width:30rem;
+    height: 40rem;
+    margin: auto;
+    text-align: center;
+}
+
+#first-page h1{
+    font-size: 7rem;
+    text-shadow: 2.5px 2.5px 1px var(--terciary-color);
+    line-height: 8.5rem;
+}
+
+#first-page p{
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#first-page a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem 4rem;
+    background: linear-gradient(to right, var(--secondary-color), var(--terciary-color));
+    border-radius: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    section{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #first-page{
+        text-align: start;
+        width: 30rem;
+        margin: 0; 
+        margin-top: 15rem;
+        margin-left: 8rem;
+    }
+}
