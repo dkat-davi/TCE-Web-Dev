@@ -33,6 +33,7 @@ header {
     right: 0;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
     align-items: center;   
     padding: .1rem 2rem;
     background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
