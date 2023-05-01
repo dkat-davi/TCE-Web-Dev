@@ -22,6 +22,10 @@ body {
     background-color: var(--primary-color);
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .container {
     background-image: url(../assets/about/background-image.png);
     background-repeat: no-repeat;
