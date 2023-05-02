@@ -131,7 +131,7 @@ header #references a {
 footer {
     width: 100%;
     padding: 1rem 0;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color) !important;
     text-align: center;
 }
 
