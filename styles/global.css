@@ -36,7 +36,8 @@ header {
     z-index: 1;
     align-items: center;   
     padding: .1rem 2rem;
-    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    /* background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color)); */
+    background-color: var(--secondary-color);
 }
 
 header h1 a{
@@ -148,11 +149,12 @@ footer li {
 }
 
 footer li a{
-    color: var(--terciary-color);
+    color: #beeed5;
     text-decoration: none;
 }
 
 .footer-icons {
+    color: var(--color-white);
     font-size: 2rem;
 }
 
