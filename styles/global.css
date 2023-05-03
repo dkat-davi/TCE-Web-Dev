@@ -22,6 +22,8 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     background-color: var(--primary-color);
     height: 100vh;
 }
@@ -128,6 +130,10 @@ header #references a {
     margin-right: 1rem;
     font-size: 1.8rem;
     color: var(--terciary-color);
+}
+
+main {
+    flex: 1;
 }
 
 footer {
