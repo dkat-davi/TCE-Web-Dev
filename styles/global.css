@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     background-color: var(--primary-color);
     height: 100vh;
+    padding-top: 4.8rem;
 }
 
 header {
