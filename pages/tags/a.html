@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +13,9 @@
     <script src="../../js/script.js" defer></script>
 </head>
 <body>
-    <div class="container" ontouchmove="changeTagPageMobile('button', 'h1')">
+    <div class="container">
         <header>
-                <h1><a href="../index.html">Projeto WEB</a></h1>
+                <h1><a href="../../index.html">Projeto WEB</a></h1>
         
                 <nav>
                     <ul>
@@ -27,24 +27,24 @@
                         <li id="references">
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="../references.html">
                                         <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="../browsers">
                                         <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="../atributes">
                                         <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Sobre nós</a>
+                            <a href="../about.html">Sobre nós</a>
                         </li>
                     </ul>
                 </nav>
@@ -54,19 +54,23 @@
                 </p>
         </header>
         <main>
+            <!-- Página Anterior -->
             <div id="previousTag" onclick="changeTagPage('button')">
                 <i class="fa-solid fa-angle-left" id="references-menu-icon"></i>
             </div>
             <section class="wrapper">
+                <!-- Título -->
                 <div id="title">
                     <h1 class="green-background" >Tag &lt;a&gt;</h1>
                 </div>
-                <div class="deficioes">
+                <!-- Definições -->
+                <div class="definicoes">
                     <h2 class="green-background">
                         Definições e uso
                     </h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto odit fugit, facere necessitatibus qui reprehenderit unde numquam recusandae ab eius quisquam ad eligendi earum quam nostrum, molestias modi quasi laborum?</p>
                 </div>
+                <!-- Exemplos -->
                 <div class="exemplos">
                     <h2 class="green-background">
                         Exemplos
@@ -74,7 +78,37 @@
                     <div class="codigo">
                         <pre><code>&lt;a href="https://www.w3schools.com"&gt; Visit W3Schools.com! &lt;/a&gt;</code></pre>
                     </div>
+                    <button id="open-modal" onclick="openExample()">Testar exemplo</button>
+                    <dialog id="modal">
+                        <div id="close-modal">
+                            <h2>Exemplo</h2>
+                            <i class="fa-solid fa-xmark" onclick="closeExample()"></i>
+                        </div>
+                        <!-- Código para exibição -->
+                        <div class="left-side modal-div">
+                            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;The a element&lt;/h1&gt;
+
+&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools.com!&lt;/a&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                        </div>
+                        <!-- Código funcionando -->
+                        <div class="right-side modal-div">
+                            
+                            <h1>The a element</h1>
+
+                            <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+                        </div>
+                    </dialog>
                 </div>
+                <!-- Atributos -->
                 <div class="atributos">
                     <h2 class="green-background">
                         Atributos
@@ -112,6 +146,7 @@
                     </table>
                 </div>
             </section>
+            <!-- Próxima página -->
             <div id="nextTag" onclick="changeTagPage('h1')">
                 <i class="fa-solid fa-angle-right" id="references-menu-icon"></i>
             </div>
@@ -119,19 +154,19 @@
         <footer>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="../references.html">
                         <span class="footer-icons"><i class="fa-solid fa-code"></i></span>
                         <span class="footer-links">Tags HTML</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../browsers">
                         <span class="footer-icons"><i class="fa-brands fa-chrome"></i>
                         </span><span class="footer-links">Suporte dos navegadores</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../atributes">
                         <span class="footer-icons"><i class="fa-solid fa-earth-americas"></i></span>
                         <span class="footer-links">Atributos globais</span>
                     </a>

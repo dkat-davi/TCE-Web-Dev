@@ -1,4 +1,5 @@
 const windowWidth = this.window.innerWidth
+const modal = document.querySelector('#modal')
 
 const handleDropdonwMenuClick = () => {
     const options = document.querySelector('nav')
@@ -35,7 +36,7 @@ const handleDropdonwMenuReferencesClick = () => {
 const handleScrollRight = () => {
     const listItens = document.querySelector('.people')
     listItens.scrollBy({ 
-        left: 400, 
+        left: 450, 
         top: 0, 
         behavior: 'smooth' 
     });
@@ -44,41 +45,22 @@ const handleScrollRight = () => {
 const handleScrollLeft = () => {
     const listItens = document.querySelector('.people')
     listItens.scrollBy({
-        left: -400,
+        left: -450,
         top: 0,
         behavior: 'smooth'
       });
 }
 
-const changeTagPageMobile = (previousTag, nextTag) => {
-    if (windowWidth <= '768') {
-        const screen = document.querySelector('html')
-        let initialPosition = null
-        
-        screen.addEventListener('touchstart', (event) => {
-            initialPosition = event.touches[0].clientX
-        })
-    
-        screen.addEventListener('touchmove', (event) => {
-            if (initialPosition === null) {
-                return;
-            }
-    
-            const currentPosition = event.changedTouches[0].clientX
-    
-            if (currentPosition < initialPosition) {
-                window.location.assign(`./${nextTag}.html`)
-            } else if ( currentPosition > initialPosition) {
-                window.location.assign(`./${previousTag}.html`)
-            }
-    
-            initialPosition = null
-        })
-    }
-}
-
 const changeTagPage = (tagPage) => {
     window.location.assign(`./${tagPage}.html`)
+}
+
+const openExample = () => {
+    modal.showModal()
+}
+
+const closeExample = () => {
+    modal.close()
 }
 
 window.addEventListener('resize', function() {

@@ -32,6 +32,9 @@ main section {
 }
 
 #title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-weight: 600;
     margin-top: 1.5rem;
     text-align: center;
@@ -106,6 +109,72 @@ code {
     background-color: #4e7a8d79;
     border-radius: 1rem; 
     padding: 2rem 2rem;
+}
+
+#open-modal {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    border: .2rem solid #10222b;
+    background-color: var(--color-white);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    outline: none;
+    text-decoration: none;
+}
+
+#open-modal:hover {
+    background-color: var(--secondary-color);
+    color: var(--color-white);
+}
+
+#modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #E7E9EB;
+    outline-color: var(--primary-color);
+}
+
+#modal::backdrop {
+    background-color: #ffffff9d;
+}
+
+#close-modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+#close-modal i {
+    font-size: 3rem;
+    transform: translateY(-15%);
+}
+
+#close-modal i:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+#modal .modal-div {
+    background-color: var(--color-white);
+    padding: 1rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.315);
+}
+
+.right-side {
+    margin-top: 2rem;
+}
+
+.modal-div h1 {
+    margin-bottom: 2rem;
 }
 
 .atributos table {
