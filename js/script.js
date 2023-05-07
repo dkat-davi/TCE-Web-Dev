@@ -50,35 +50,41 @@ const handleScrollLeft = () => {
       });
 }
 
-
-if (windowWidth <= '768') {
-    const screen = document.querySelector('html')
-    let initialPosition = null
+const changeTagPageMobile = (previousTag, nextTag) => {
+    if (windowWidth <= '768') {
+        const screen = document.querySelector('html')
+        let initialPosition = null
+        
+        screen.addEventListener('touchstart', (event) => {
+            initialPosition = event.touches[0].clientX
+        })
     
-    screen.addEventListener('touchstart', (event) => {
-        initialPosition = event.touches[0].clientX
-    })
+        screen.addEventListener('touchmove', (event) => {
+            if (initialPosition === null) {
+                return;
+            }
+    
+            const currentPosition = event.changedTouches[0].clientX
+    
+            if (currentPosition < initialPosition) {
+                window.location.assign(`./${nextTag}.html`)
+            } else if ( currentPosition > initialPosition) {
+                window.location.assign(`./${previousTag}.html`)
+            }
+    
+            initialPosition = null
+        })
+    }
+}
 
-    screen.addEventListener('touchmove', (event) => {
-        if (initialPosition === null) {
-            return;
-        }
-
-        const currentPosition = event.changedTouches[0].clientX
-
-        if (currentPosition < initialPosition) {
-            window.location.assign('./button.html')
-        } else if ( currentPosition > initialPosition) {
-            window.location.assign('./h1.html')
-        }
-
-        initialPosition = null
-    })
+const changeTagPage = (tagPage) => {
+    window.location.assign(`./${tagPage}.html`)
 }
 
 window.addEventListener('resize', function() {
     const menu = document.querySelector('nav')
     const menuIcon = document.querySelector('#menu-icon')
+    const windowWidth = this.window.innerWidth
 
     menu.style.display = windowWidth <= '768' ? 'none' : 'block'
     menuIcon.classList.add('fa-bars')

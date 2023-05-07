@@ -13,7 +13,7 @@
     <script src="../../js/script.js" defer></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" ontouchmove="changeTagPageMobile('button', 'h1')">
         <header>
                 <h1><a href="../index.html">Projeto WEB</a></h1>
         
@@ -54,6 +54,9 @@
                 </p>
         </header>
         <main>
+            <div id="previousTag" onclick="changeTagPage('button')">
+                <i class="fa-solid fa-angle-left" id="references-menu-icon"></i>
+            </div>
             <section class="wrapper">
                 <div id="title">
                     <h1 class="green-background" >Tag &lt;a&gt;</h1>
@@ -109,6 +112,9 @@
                     </table>
                 </div>
             </section>
+            <div id="nextTag" onclick="changeTagPage('h1')">
+                <i class="fa-solid fa-angle-right" id="references-menu-icon"></i>
+            </div>
         </main>
         <footer>
             <ul>
