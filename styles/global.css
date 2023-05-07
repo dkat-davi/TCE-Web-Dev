@@ -21,6 +21,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #91AA9D;
+    border-radius: 99rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;

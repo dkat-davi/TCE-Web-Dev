@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag a</title>
+    <title>Tag canvas</title>
 
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="../../styles/tags.css">
@@ -54,29 +54,40 @@
                 </p>
         </header>
         <main>
-            <!-- Página Anterior -->
-            <div id="previousTag" onclick="changeTagPage('button')">
+            <div id="previousTag" onclick="changeTagPage('a')">
                 <i class="fa-solid fa-angle-left" id="references-menu-icon"></i>
             </div>
             <section class="wrapper">
-                <!-- Título -->
                 <div id="title">
-                    <h1 class="green-background" >Tag &lt;a&gt;</h1>
+                    <h1 class="green-background" >Tag &lt;canvas&gt;</h1>
                 </div>
-                <!-- Definições -->
                 <div class="definicoes">
                     <h2 class="green-background">
                         Definições e uso
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto odit fugit, facere necessitatibus qui reprehenderit unde numquam recusandae ab eius quisquam ad eligendi earum quam nostrum, molestias modi quasi laborum?</p>
+                    <p>
+                        A tag &lt;canvas&gt; é usada para desenhar gráficos via scripting (normalmente JavaScript) <br><br>
+                        A tag &lt;canvas&gt; é transparente, e é somente um container para gráficos, o usuário deve usar um script para desenhar os gráficos em si <br><br>
+                        Qualquer texto dentro do elemento &lt;canvas&gt; será mostrado em navegadores com JavaScript desativado e em navegadores que não suportam &lt;canvas&gt;
+                    </p>
                 </div>
-                <!-- Exemplos -->
                 <div class="exemplos">
                     <h2 class="green-background">
                         Exemplos
                     </h2>
                     <div class="codigo">
-                        <pre><code>&lt;a href="https://www.w3schools.com"&gt; Visit W3Schools.com! &lt;/a&gt;</code></pre>
+                        <pre><code>
+&lt;canvas id="myCanvas"&gt;
+Seu navegador não tem suporte para a tag canvas.
+&lt;/canvas&gt;
+
+&lt;script&gt;
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 80, 80);
+&lt;/script&gt;
+                        </code></pre>
                     </div>
                     <button id="open-modal" onclick="openExample()">Testar exemplo</button>
                     <dialog id="modal">
@@ -84,31 +95,45 @@
                             <h2>Exemplo</h2>
                             <i class="fa-solid fa-xmark" onclick="closeExample()"></i>
                         </div>
-                        <!-- Código para exibição -->
                         <div class="left-side modal-div">
                             <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
 
-&lt;h1&gt;The a element&lt;/h1&gt;
+&lt;h1&gt;Tag canvas&lt;/h1&gt;
 
-&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools.com!&lt;/a&gt;
+&lt;canvas id="myCanvas"&gt;
+Seu navegador não tem suporte para a tag canvas.
+&lt;/canvas&gt;
+
+&lt;script&gt;
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 80, 80);
+&lt;/script&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;
                             </code></pre>
                         </div>
-                        <!-- Código funcionando -->
                         <div class="right-side modal-div">
-                            
-                            <h1>The a element</h1>
+                            <h1>Tag canvas</h1>
 
-                            <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+                            <canvas id="myCanvas">
+                            Seu navegador não tem suporte para a tag canvas.
+                            </canvas>
+
+                            <script>
+                            var canvas = document.getElementById("myCanvas");
+                            var ctx = canvas.getContext("2d");
+                            ctx.fillStyle = "#0000FF";
+                            ctx.fillRect(0, 0, 80, 80);
+                            </script>
                         </div>
                     </dialog>
                 </div>
-                <!-- Atributos -->
                 <div class="atributos">
                     <h2 class="green-background">
                         Atributos
@@ -123,31 +148,20 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="td-atributos"><span>download</span></td>
-                                <td class="td-valor">filename</td>
-                                <td class="td-descricao">Specifies that the target will be downloaded when a user clicks on the hyperlink</td>
+                                <td class="td-atributos"><span>Height</span></td>
+                                <td class="td-valor">Pixels</td>
+                                <td class="td-descricao">Especifica a altura do canvas. Valor padrão é 150</td>
                             </tr>
                             <tr>
-                                <td class="td-atributos">download</td>
-                                <td class="td-valor">filename</td>
-                                <td class="td-descricao">Specifies that the target will be downloaded when a user clicks on the hyperlink</td>
-                            </tr>
-                            <tr>
-                                <td class="td-atributos">download</td>
-                                <td class="td-valor">filename</td>
-                                <td class="td-descricao">Specifies that the target will be downloaded when a user clicks on the hyperlink</td>
-                            </tr>
-                            <tr>
-                                <td class="td-atributos">download</td>
-                                <td class="td-valor">filename</td>
-                                <td class="td-descricao">Specifies that the target will be downloaded when a user clicks on the hyperlink</td>
+                                <td class="td-atributos">Width</td>
+                                <td class="td-valor">Pixels</td>
+                                <td class="td-descricao">Especifica a largura do canvas. Valor padrão é 300</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
-            <!-- Próxima página -->
-            <div id="nextTag" onclick="changeTagPage('h1')">
+            <div id="nextTag" onclick="changeTagPage('small')">
                 <i class="fa-solid fa-angle-right" id="references-menu-icon"></i>
             </div>
         </main>

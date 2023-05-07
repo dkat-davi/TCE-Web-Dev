@@ -122,6 +122,8 @@ code {
     font-weight: bold;
     outline: none;
     text-decoration: none;
+    transition: all .2s ease-in;
+    cursor: pointer;
 }
 
 #open-modal:hover {
@@ -143,6 +145,15 @@ code {
 
 #modal::backdrop {
     background-color: #ffffff9d;
+}
+
+#modal::-webkit-scrollbar {
+    width: 1rem;
+}
+
+#modal::-webkit-scrollbar-thumb {
+    background-color: #b7c4bd;
+    border-radius: 99rem;
 }
 
 #close-modal {
