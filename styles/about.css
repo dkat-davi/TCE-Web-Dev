@@ -110,6 +110,7 @@ main .scroll-right-button i, main .scroll-left-button i{
         flex: 1;
         flex-direction: column;
         justify-content: center;
+        margin: 0;
     }
 
     main h1 {

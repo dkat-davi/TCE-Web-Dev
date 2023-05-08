@@ -21,11 +21,21 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #91AA9D;
+    border-radius: 99rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     background-color: var(--primary-color);
     height: 100vh;
+    padding-top: 4.8rem;
 }
 
 header {
@@ -40,6 +50,10 @@ header {
     padding: .1rem 2rem;
     /* background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color)); */
     background-color: var(--secondary-color);
+}
+
+header h1 {
+    transform: translateY(-.4rem);
 }
 
 header h1 a{
