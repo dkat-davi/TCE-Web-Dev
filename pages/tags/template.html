@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referências HTML</title>
+    <title>Tag template</title>
 
-    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/tags.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="../js/script.js" defer></script>
+    <script src="../../js/script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <header>
-                <h1><a href="../index.html">Projeto WEB</a></h1>
+                <h1><a href="../../index.html">Projeto WEB</a></h1>
         
                 <nav>
                     <ul>
@@ -26,24 +27,24 @@
                         <li id="references">
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="../references.html">
                                         <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="../browsers">
                                         <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="../atributes">
                                         <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Sobre nós</a>
+                            <a href="../about.html">Sobre nós</a>
                         </li>
                     </ul>
                 </nav>
@@ -53,30 +54,82 @@
                 </p>
         </header>
         <main>
+            <div id="previousTag" onclick="changeTagPage('canvas')">
+                <i class="fa-solid fa-angle-left" id="references-menu-icon"></i>
+            </div>
+            <section class="wrapper">
+                <div id="title">
+                    <h1 class="green-background" >Tag &lt;template&gt;</h1>
+                </div>
+                <div class="definicoes">
+                    <h2 class="green-background">
+                        Definições e uso
+                    </h2>
+                    <p>
+                        A tag &lt;template&gt; é usada como um container para armazenar algum conteúdo HTML
+                            escondido do usuário assim que a página carregar <br> <br>
+                            
+                            O conteúdo dentro de um &lt;template&gt; pode ser renderizado mais tarde com um JavaScript <br><br>
 
+                            Você pode usar a tag &lt;template&gt; se tiver algum código HTML que você queira usar várias
+                            vezes, mas não até você ativamente pedir-lo. Para fazer isso sem a tag &lt;template&gt;, você
+                            deverá criar um código HTML com JavaScript para prevenir o navegador de renderizar o
+                            código
+                    </p>
+                </div>
+                <div class="exemplos">
+                    <h2 class="green-background">
+                        Exemplos
+                    </h2>
+                    <div class="codigo">
+                        <pre><code>
+&lt;button onclick="showContent()"&gt;Show hidden content&lt;/button&gt;
+
+&lt;template&gt;
+  &lt;h2&gt;Flower&lt;/h2&gt;
+  &lt;img src="img_white_flower.jpg" width="214" height="204"&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+&lt;/script&gt;
+                        </code></pre>
+                    </div>
+                    <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_template" target="_blank">
+                        <button id="open-modal">Testar exemplo</button>
+                    </a>
+                </div>
+            </section>
+            <div id="nextTag" onclick="changeTagPage('small')">
+                <i class="fa-solid fa-angle-right" id="references-menu-icon"></i>
+            </div>
         </main>
         <footer>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="../references.html">
                         <span class="footer-icons"><i class="fa-solid fa-code"></i></span>
                         <span class="footer-links">Tags HTML</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../browsers">
                         <span class="footer-icons"><i class="fa-brands fa-chrome"></i>
                         </span><span class="footer-links">Suporte dos navegadores</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../atributes">
                         <span class="footer-icons"><i class="fa-solid fa-earth-americas"></i></span>
                         <span class="footer-links">Atributos globais</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../about.html">
                         <span class="footer-icons"><i class="fa-solid fa-user-group footer-icons"></i></span>
                         <span class="footer-links">Sobre Nós</span>
                     </a>

@@ -1,3 +1,6 @@
+const windowWidth = this.window.innerWidth
+const modal = document.querySelector('#modal')
+
 const handleDropdonwMenuClick = () => {
     const options = document.querySelector('nav')
     const dropdownMenuIcon = document.querySelector('#menu-icon')
@@ -28,6 +31,36 @@ const handleDropdonwMenuReferencesClick = () => {
         dropdownMenuIcon.classList.remove('fa-angle-up')
         dropdownMenuIcon.classList.add('fa-angle-down')
     }
+}
+
+const handleScrollRight = () => {
+    const listItens = document.querySelector('.people')
+    listItens.scrollBy({ 
+        left: 450, 
+        top: 0, 
+        behavior: 'smooth' 
+    });
+}
+
+const handleScrollLeft = () => {
+    const listItens = document.querySelector('.people')
+    listItens.scrollBy({
+        left: -450,
+        top: 0,
+        behavior: 'smooth'
+      });
+}
+
+const changeTagPage = (tagPage) => {
+    window.location.assign(`./${tagPage}.html`)
+}
+
+const openExample = () => {
+    modal.showModal()
+}
+
+const closeExample = () => {
+    modal.close()
 }
 
 window.addEventListener('resize', function() {

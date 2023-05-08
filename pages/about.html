@@ -7,6 +7,7 @@
     <title>Sobre Nós</title>
 
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="../js/script.js" defer></script>
@@ -15,28 +16,28 @@
     <div class="container">
         <header>
                 <h1><a href="../index.html">Projeto WEB</a></h1>
-                
+        
                 <nav>
                     <ul>
-                        
-                        <li onclick="handleDropdonwMenuReferencesClick()"> 
+        
+                        <li onclick="handleDropdonwMenuReferencesClick()">
                             <span>Referências</span> <i class="fa-solid fa-angle-down" id="references-menu-icon">
                         </i>
                         </li>
                         <li id="references">
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="references.html">
                                         <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="browsers.html">
                                         <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="atributes.html">
                                         <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
                                     </a>
                                 </li>
@@ -47,37 +48,169 @@
                         </li>
                     </ul>
                 </nav>
-
                 <p>
                     <i class="fa-solid fa-bars" id="menu-icon"
                     onclick="handleDropdonwMenuClick('header nav', '#menu-icon')"></i>
                 </p>
         </header>
         <main>
+            <h1>Nossa Equipe</h1>
+            <div class="scroll-horizontal">
+                <div class="scroll-left-button">
+                    <i class="fa-solid fa-arrow-left" onclick="handleScrollLeft()"></i>
+                </div>
+                <div class="people">
+                    <ul>
+                        <li class="person">
+                            <img src="https://avatars.githubusercontent.com/u/84480727?v=4" alt="Foto de Caetano">
+                            <div class="person-details">
+                                <p>Caetano Veloso</p>
+                                <p>
+                                    <span>Função</span>
+                                    <a href="https://github.com/CaetanoVeloso" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/caetano-emanuel-oliveira-veloso-742514214" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="person">
+                            <img src="https://avatars.githubusercontent.com/u/86988184?v=4" alt="Foto de Davi">
+                            <div class="person-details">
+                                <p>Davi Teixeira</p>
+                                <p>
+                                    <span>Função</span>
+                                    <a href="https://github.com/dkat-davi" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/dkat-davi/" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="person">
+                            <img src="https://avatars.githubusercontent.com/u/96545807?v=4" alt="">
+                            <div class="person-details">
+                                <p>Estevão Ribeiro</p>
+                                <p>
+                                    <span>Função</span>
+                                    <a href="https://github.com/estevaorib" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="person">
+                            <img src="https://avatars.githubusercontent.com/u/130567958?v=4" alt="">
+                            <div class="person-details">
+                                <p>Gabriel Soares</p>
+                                <p>
+                                    <span>Função</span>
+                                    <a href="https://github.com/GabriSF" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="person">
+                            <img src="https://avatars.githubusercontent.com/u/119495484?v=4" alt="">
+                            <div class="person-details">
+                                <p>Lorena Zuba</p>
+                                <p>
+                                    <span>Função</span>
+                                    <a href="https://github.com/LorenaZuba" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="www.linkedin.com/in/lorena-zuba-b3646a263" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="person">
+                            <img src="https://avatars.githubusercontent.com/u/130569884?v=4" alt="">
+                            <div class="person-details">
+                                <p>Mariana Oliveira</p>
+                                <p>
+                                    <span>Função</span>
+                                    <a href="https://github.com/MonaMagis" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <i class="fa-brands fa-linkedin" target="_blank"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="person">
+                            <img src="https://avatars.githubusercontent.com/u/107436843?v=4" alt="Imagem de Matheus">
+                            <div class="person-details">
+                                <p>Matheus Vieira</p>
+                                <p>
+                                    <span>Função</span>
+                                    <a href="https://github.com/thevsma" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="www.linkedin.com/in/matheusvprates" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="person">
+                            <img src="https://avatars.githubusercontent.com/u/108694490?v=4" alt="Imagem de Russel">
+                            <div class="person-details">
+                                <p>Russell Edward</p>
+                                <p>
+                                    <span>Função</span>
+                                    <a href="https://github.com/Boraazix" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="scroll-right-button">
+                    <i class="fa-solid fa-arrow-right" onclick="handleScrollRight()"></i>
+                </div>
+            </div>
         </main>
         <footer>
             <ul>
                 <li>
-                    <a href="#">
-                        <span class="footer-icons"><i class="fa-solid fa-code"></i></span> 
+                    <a href="references.html">
+                        <span class="footer-icons"><i class="fa-solid fa-code"></i></span>
                         <span class="footer-links">Tags HTML</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="footer-icons"><i class="fa-brands fa-chrome"></i> 
+                    <a href="browsers.html">
+                        <span class="footer-icons"><i class="fa-brands fa-chrome"></i>
                         </span><span class="footer-links">Suporte dos navegadores</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="atributes.html">
                         <span class="footer-icons"><i class="fa-solid fa-earth-americas"></i></span>
                         <span class="footer-links">Atributos globais</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <span class="footer-icons"><i class="fa-solid fa-user-group footer-icons"></i></span> 
+                        <span class="footer-icons"><i class="fa-solid fa-user-group footer-icons"></i></span>
                         <span class="footer-links">Sobre Nós</span>
                     </a>
                 </li>
