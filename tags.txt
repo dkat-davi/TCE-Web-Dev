@@ -1,4 +1,6 @@
+a
 area
+b
 blockquote
 button
 canvas
@@ -18,6 +20,7 @@ link
 meta
 meter
 nav
+ol
 progress
 samp
 script
@@ -27,4 +30,5 @@ summary
 table
 templates
 tr
+ul
 video
