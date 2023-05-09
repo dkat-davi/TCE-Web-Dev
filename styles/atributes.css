@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+main h1 {
+    position: absolute;
+    width: 60rem;
+    height: 8.7rem;
+    left: 35%;
+    top: 9.6rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6.4rem;
+    line-height: 77px;
+
+    color: #FCFFF5;
+}
+
+#desc {
+    position: absolute;
+    width: 300px;
+    height: 24px;
+    left: 500px;
+    top: 209px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #D9D9D9;
+}
