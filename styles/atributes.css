@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 main h1 {
     position: absolute;
-    width: 60rem;
-    height: 8.7rem;
-    left: 35%;
+    /* width: 60rem; */
+    /* height: 8.7rem; */
+    /* left: 64rem; */
     top: 9.6rem;
 
-    font-family: 'Inter';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     font-size: 6.4rem;
@@ -18,16 +18,62 @@ main h1 {
 
 #desc {
     position: absolute;
-    width: 300px;
-    height: 24px;
-    left: 500px;
-    top: 209px;
+    /* width: 30rem; */
+    /* height: 2.4rem; */
+    /* left: 50rem; */
+    top: 20.9rem;
 
-    font-family: 'Inter';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 16px;
+    /* line-height: 16px; */
 
     color: #D9D9D9;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#atributestable {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 25rem;
+    /* position: absolute; */
+    /* top: 30rem; */
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead tr:first-child{
+    background-color: #3E606F;
+    padding: 1rem;
+    border: #193441 1rem solid;
+}
+
+tbody tr{
+    background-color: #91AA9D;
+    border: #193441 1rem solid;
+}
+
+thead th:first-child{
+    padding: 1.25rem 10rem 1.25rem 2.5rem;
+    border: #193441 1rem solid;
+}
+
+thead th:last-child{
+    padding: 1.25rem 50rem 1.25rem 2.5rem;
+}
+
+tbody td{
+    padding: 1rem;
+    border: #193441 1rem solid;
 }
