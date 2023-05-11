@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag data</title>
+    <title>Tag table</title>
 
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="../../styles/tags.css">
@@ -64,11 +64,11 @@
                         <a href="../references.html"><i class="fa-solid fa-angle-left"
                                 id="references-menu-icon"></i><span id="text">Voltar</span></a>
                     </p>
-                    <h1 class="green-background">Tag &lt;data&gt;</h1>
+                    <h1 class="green-background">Tag &lt;table&gt;</h1>
                     <p id="nextPrevious">
-                        <a href="code.html" id="previous">Anterior</a>
+                        <a href="summary.html" id="previous">Anterior</a>
                         <span>|</span>
-                        <a href="details.html" id="next">Próximo</a>
+                        <a href="template.html" id="next">Próximo</a>
                     </p>
                 </div>
                 <div class="definicoes">
@@ -76,12 +76,16 @@
                         Definições e uso
                     </h2>
                     <p>
-                        A tag &lt;data&gt; é usada para adicionar uma tradução legível por máquina de um conteúdo
-                        fornecido. <br><br>
-                        Este elemento fornece um valor legível por máquina para processadores de dados e um
-                        valor legível para humanos para renderização em um navegador. <br><br>
-                        Dica: Se o conteúdo estiver relacionado a data ou hora, use o elemento &lt;time&gt; em seu
-                        lugar.
+                        A tag &lt;table&gt; define uma tabela HTML. <br><br>
+                        Uma tabela HTML consiste em um elemento &lt;table&gt; e um ou mais elementos &lt;tr&gt;,
+                        &lt;th&gt; e
+                        &lt;td&gt; <br><br>
+                        O elemento &lt;tr&gt; define uma linha da tabela, o elemento &lt;th&gt; define um cabeçalho de
+                        tabela
+                        e o elemento &lt;td&gt; define uma célula da tabela <br><br>
+                        Uma tabela HTML também pode incluir elementos &lt;caption&gt;, &lt;colgroup&gt;, &lt;thead&gt;,
+                        &lt;tfoot&gt;
+                        e &lt;tbody&gt;
                     </p>
                 </div>
                 <div class="exemplos">
@@ -90,11 +94,16 @@
                     </h2>
                     <div class="codigo">
                         <pre><code>
-&lt;ul&gt;
-    &lt;li&gt;&lt;data value="21053"&gt;Cherry Tomato&lt;/data&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;data value="21054"&gt;Beef Tomato&lt;/data&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;data value="21055"&gt;Snack Tomato&lt;/data&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Month&lt;/th&gt;
+        &lt;th&gt;Savings&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;January&lt;/td&gt;
+        &lt;td&gt;$100&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
                         </code></pre>
                     </div>
                     <button id="open-modal" onclick="openExample()">Testar exemplo</button>
@@ -107,17 +116,31 @@
                             <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+    table, th, td {
+        border: 1px solid black;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
 &lt;body&gt;
                                 
-&lt;h1&gt;Tag data&lt;/h1&gt;
+&lt;h1&gt;Tag table&lt;/h1&gt;
                                 
-&lt;p&gt;O exemplo a seguir exibe nomes de produtos, mas também associa cada nome a um número de produto:&lt;/p&gt;
-                                
-&lt;ul&gt;
-    &lt;li&gt;&lt;data value="21053"&gt;Cherry Tomato&lt;/data&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;data value="21054"&gt;Beef Tomato&lt;/data&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;data value="21055"&gt;Snack Tomato&lt;/data&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Month&lt;/th&gt;
+        &lt;th&gt;Savings&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;January&lt;/td&gt;
+        &lt;td&gt;$100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;February&lt;/td&gt;
+        &lt;td&gt;$80&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
                                 
 &lt;/body&gt;
 &lt;/html&gt;
@@ -125,15 +148,22 @@
                         </div>
                         <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
                         <div class="right-side modal-div">
-                            <h1>Tag data</h1>
+                            <h1>Tag table</h1>
 
-                            <p>O exemplo a seguir exibe nomes de produtos, mas também associa cada nome a um número de produto:</p>
-
-                            <ul>
-                                <li><data value="21053">Cherry Tomato</data></li>
-                                <li><data value="21054">Beef Tomato</data></li>
-                                <li><data value="21055">Snack Tomato</data></li>
-                            </ul>
+                            <table style="border: 1px solid black">
+                                <tr>
+                                    <th style="border: 1px solid black">Month</th>
+                                    <th style="border: 1px solid black">Savings</th>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid black">January</td>
+                                    <td style="border: 1px solid black">$100</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid black">February</td>
+                                    <td style="border: 1px solid black">$80</td>
+                                </tr>
+                            </table>
                         </div>
                     </dialog>
                 </div>
@@ -141,23 +171,7 @@
                     <h2 class="green-background">
                         Atributos
                     </h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="td-atributos">Atributo</th>
-                                <th class="td-valor">Valor</th>
-                                <th class="td-descricao">Descrição</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="td-atributos"><span>Value</span></td>
-                                <td class="td-valor">Machine-readable format</td>
-                                <td class="td-descricao">Especifica a tradução legível por máquina do conteúdo do elemento</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>Esta tag também suporta <a href="../atributes.html">Atributos Globais.</a></p>
+                    <p>Esta tag suporta somente <a href="../atributes.html">Atributos Globais.</a></p>
                 </div>
             </section>
         </main>
