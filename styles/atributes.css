@@ -2,33 +2,27 @@
 
 main h1 {
     text-align: center;
-
+    margin-top: 5rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     font-size: 6.4rem;
     line-height: 77px;
-
     color: #FCFFF5;
+}
+
+body{
+    background-color: #193441;
 }
 
 #desc {
     text-align: center;
-
+    margin-top: 2rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    /* line-height: 16px; */
-
     color: #D9D9D9;
-}
-
-.center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 #atributestable {
@@ -36,40 +30,34 @@ main h1 {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 25rem;
-    /* position: absolute; */
-    /* top: 30rem; */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 table {
-    border-collapse: collapse;
+    border-spacing: .8rem;
+    width: 100%;
 }
 
-thead tr:first-child{
+th{
     background-color: #3E606F;
-    padding: 1rem;
-    border: #193441 1rem solid;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    text-align: left;
+    height: 4rem;
 }
 
-tbody tr{
+td{
     background-color: #91AA9D;
-    border: #193441 1rem solid;
-}
-
-thead th{
-    padding: 2rem 0;
-    border: #193441 1rem solid;
-}
-
-tbody td{
-    padding: 1rem;
-    border: #193441 1rem solid;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    height: 4rem;
 }
 
 .col-atributos {
-    max-width: 30vw;
+    width: 20%;
 }
 
 .col-descricao {
-    width: 70vw;
+    width: 80%;
 }
