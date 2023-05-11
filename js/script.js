@@ -51,10 +51,6 @@ const handleScrollLeft = () => {
       });
 }
 
-const changeTagPage = (tagPage) => {
-    window.location.assign(`./${tagPage}.html`)
-}
-
 const openExample = () => {
     modal.showModal()
 }

@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 main h1 {
-    position: absolute;
-    /* width: 60rem; */
-    /* height: 8.7rem; */
-    /* left: 64rem; */
-    top: 9.6rem;
+    text-align: center;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -17,11 +13,7 @@ main h1 {
 }
 
 #desc {
-    position: absolute;
-    /* width: 30rem; */
-    /* height: 2.4rem; */
-    /* left: 50rem; */
-    top: 20.9rem;
+    text-align: center;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -64,16 +56,20 @@ tbody tr{
     border: #193441 1rem solid;
 }
 
-thead th:first-child{
-    padding: 1.25rem 10rem 1.25rem 2.5rem;
+thead th{
+    padding: 2rem 0;
     border: #193441 1rem solid;
-}
-
-thead th:last-child{
-    padding: 1.25rem 50rem 1.25rem 2.5rem;
 }
 
 tbody td{
     padding: 1rem;
     border: #193441 1rem solid;
+}
+
+.col-atributos {
+    max-width: 30vw;
+}
+
+.col-descricao {
+    width: 70vw;
 }

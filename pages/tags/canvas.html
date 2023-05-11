@@ -54,12 +54,17 @@
                 </p>
         </header>
         <main>
-            <div id="previousTag" onclick="changeTagPage('a')">
-                <i class="fa-solid fa-angle-left" id="references-menu-icon"></i>
-            </div>
             <section class="wrapper">
                 <div id="title">
+                    <p id="back">
+                        <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Voltar</span></a>
+                    </p>
                     <h1 class="green-background" >Tag &lt;canvas&gt;</h1>
+                    <p id="nextPrevious">
+                        <a href="./button.html" id="previous">Anterior</a>
+                        <span>|</span>
+                        <a href="./code.html" id="next">Próximo</a>
+                    </p>
                 </div>
                 <div class="definicoes">
                     <h2 class="green-background">
@@ -92,7 +97,7 @@ ctx.fillRect(0, 0, 80, 80);
                     <button id="open-modal" onclick="openExample()">Testar exemplo</button>
                     <dialog id="modal">
                         <div id="close-modal">
-                            <h2>Exemplo</h2>
+                            <h2 class="green-background" >Exemplo</h2>
                             <i class="fa-solid fa-xmark" onclick="closeExample()"></i>
                         </div>
                         <div class="left-side modal-div">
@@ -118,6 +123,7 @@ ctx.fillRect(0, 0, 80, 80);
 &lt;/html&gt;
                             </code></pre>
                         </div>
+                        <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
                         <div class="right-side modal-div">
                             <h1>Tag canvas</h1>
 
@@ -159,11 +165,9 @@ ctx.fillRect(0, 0, 80, 80);
                             </tr>
                         </tbody>
                     </table>
+                    <p>Esta tag também suporta <a href="../atributes.html">Atributos Globais.</a></p>
                 </div>
             </section>
-            <div id="nextTag" onclick="changeTagPage('small')">
-                <i class="fa-solid fa-angle-right" id="references-menu-icon"></i>
-            </div>
         </main>
         <footer>
             <ul>

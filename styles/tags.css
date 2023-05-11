@@ -36,9 +36,35 @@ main section {
     flex-direction: column;
     align-items: center;
     font-weight: 600;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     text-align: center;
     width: 100%;
+}
+
+#title #back {
+    width: 100%;
+    border-radius: 1.7rem;
+    background-color: transparent;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+#title #back a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12rem;
+    border-radius: 1.7rem;
+    background-color: var(--secondary-color);  
+    padding: 1rem 2.5rem;
+    height: 3.6rem;
+    color: var(--color-white);
+    transition: all .2s ease-in;
+    text-decoration: none;
+} 
+
+#title #back a:hover {
+    background-color: var(--terciary-color);   
 }
 
 h2, h3 {
@@ -50,39 +76,24 @@ h1 {
     font-size: 3.2rem;
 }
 
-#previousTag {
-    left: 5%;
+#nextPrevious {
+    margin-top: 1.5rem;
 }
 
-#nextTag {
-    right: 5%;
-}
-
-#previousTag, #nextTag {
-    position: absolute;
-    top: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-#previousTag:hover, #nextTag:hover {
-    background-color: var(--terciary-color);
+#nextPrevious a {
     color: var(--color-white);
-    cursor: pointer;
+    text-decoration: none;
+}
+
+#nextPrevious a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     padding: 1.5rem;
     background-color: #142a35;
 }
@@ -136,15 +147,16 @@ code {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100rem;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: .5rem;
     border: none;
-    background-color: #E7E9EB;
+    background-color: #142a35;
+    color: var(--color-white);
     outline-color: var(--primary-color);
 }
 
 #modal::backdrop {
-    background-color: #ffffff9d;
+    background-color: #9191915d;
 }
 
 #modal::-webkit-scrollbar {
@@ -152,7 +164,7 @@ code {
 }
 
 #modal::-webkit-scrollbar-thumb {
-    background-color: #b7c4bd;
+    background-color: var(--secondary-color);
     border-radius: 99rem;
 }
 
@@ -174,14 +186,15 @@ code {
     cursor: pointer;
 }
 
-#modal .modal-div {
-    background-color: var(--color-white);
-    padding: 1rem;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.315);
+#exemplo-resultado {
+    margin: 2rem 0 1rem 0;
 }
 
-.right-side {
-    margin-top: 2rem;
+#modal .modal-div {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.315);
 }
 
 .modal-div h1 {
@@ -203,6 +216,18 @@ code {
     background-color: #667F7B;
     padding: .4rem 1rem;
     border-radius: .5rem;
+}
+
+.atributos p {
+    margin-top: 1rem;
+}
+
+.atributos p a{
+    color: var(--color-white);
+}
+
+.atributos p a:hover{
+    color: var(--secondary-white);
 }
 
 .green-background {
