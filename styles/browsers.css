@@ -1,0 +1,51 @@
+.main-title h1{
+    font-size: 3rem;
+}
+table{
+    margin: 3rem auto;
+    border-spacing: .8rem;
+    width: 95vw;
+}
+th{
+    background-color: #3E606F;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    text-align: center;
+    height: 4rem;
+    color: #EDF0F2;
+}
+.col-tags{
+    width: 40%;
+}
+.col-nav{
+    width: 10%;
+}
+td{
+    background-color: #91AA9D;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    height: 4rem;
+    text-align: center;
+}
+
+.fa-check-circle{
+    color: green;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+.fa-times-circle{
+    color: red;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .main-title h1{
+        font-size: 4.2rem;
+    }
+    table{
+        width: 70vw;
+    }
+}
