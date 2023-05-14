@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag progress</title>
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/tags.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+                <h1><a href="../../index.html">Projeto WEB</a></h1>
+        
+                <nav>
+                    <ul>
+        
+                        <li onclick="handleDropdonwMenuReferencesClick()">
+                            <span>Referências</span> <i class="fa-solid fa-angle-down" id="references-menu-icon">
+                        </i>
+                        </li>
+                        <li id="references">
+                            <ul>
+                                <li>
+                                    <a href="../references.html">
+                                        <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../browsers">
+                                        <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../atributes.html">
+                                        <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../about.html">Sobre nós</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>
+                    <i class="fa-solid fa-bars" id="menu-icon"
+                    onclick="handleDropdonwMenuClick('header nav', '#menu-icon')"></i>
+                </p>
+        </header>
+        <main>
+            <section class="wrapper">
+                <div id="title">
+                    <p id="back">
+                        <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Voltar</span></a>
+                    </p>
+                    <h1 class="green-background" >Tag &lt;progress&gt;</h1>
+                    <p id="nextPrevious">
+                        <a href="./ol.html" id="previous">Anterior</a>
+                        <span>|</span>
+                        <a href="./samp.html" id="next">Próximo</a>
+                    </p>
+                </div>
+                <div class="definicoes">
+                    <h2 class="green-background">
+                        Definições e uso
+                    </h2>
+                    <p>
+                        A tag &lt;progress&gt; representa o progresso de conclusão de uma tarefa. <br><br>
+                        Dica: Sempre adicione a tag &lt;label&gt; para as melhores práticas de acessibilidade. <br><br>
+                        Dica: Use a tag &lt;progress&gt; em conjunto com o JavaScript para exibir o progresso de uma
+                        tarefa. <br><br>
+                        Nota: A tag &lt;progress&gt; não é adequada para representar um medidor (por exemplo, uso de
+                        espaço em disco ou relevância de um resultado de consulta). Para representar um medidor,
+                        use a tag &lt;meter&gt;. <br><br>
+                    </p>
+                </div>
+                <div class="exemplos">
+                    <h2 class="green-background">
+                        Exemplos
+                    </h2>
+                    <div class="codigo">
+                        <pre><code>
+&lt;label for="file"&gt;Baixando progresso:&lt;/label&gt;
+&lt;progress id="file" value="32" max="100"&gt; 32% &lt;/progress&gt;
+                        </code></pre>
+                    </div>
+                    <button id="open-modal" onclick="openExample()">Testar exemplo</button>
+                    <dialog id="modal">
+                        <div id="close-modal">
+                            <h2 class="green-background" >Exemplo</h2>
+                            <i class="fa-solid fa-xmark" onclick="closeExample()"></i>
+                        </div>
+                        <div class="left-side modal-div">
+                            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Tag progress&lt;/h1&gt;
+
+&lt;label for="file"&gt;Baixando progresso:&lt;/label&gt;
+&lt;progress id="file" value="32" max="100"&gt; 32% &lt;/progress&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                        </div>
+                        <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
+                        <div class="right-side modal-div">
+                            <h1>Tag progress</h1>
+
+                            &lt;label for="file"&gt;Baixando progresso:&lt;/label&gt;
+                            &lt;progress id="file" value="32" max="100"&gt; 32% &lt;/progress&gt;
+                        </div>
+                    </dialog>
+                </div>
+                <div class="atributos">
+                    <h2 class="green-background">
+                        Atributos
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="td-atributos">Atributo</th>
+                                <th class="td-valor">Valor</th>
+                                <th class="td-descricao">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-atributos"><span>max</span></td>
+                                <td class="td-valor">number</td>
+                                <td class="td-descricao">Especifica o quanto de trabalho a tarefa requer no total. O valor padrão é 1</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>value</span></td>
+                                <td class="td-valor">number</td>
+                                <td class="td-descricao">Especifica quanto da tarefa já foi concluído</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Esta tag também suporta <a href="../atributes.html">Atributos Globais.</a></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="../references.html">
+                        <span class="footer-icons"><i class="fa-solid fa-code"></i></span>
+                        <span class="footer-links">Tags HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../browsers">
+                        <span class="footer-icons"><i class="fa-brands fa-chrome"></i>
+                        </span><span class="footer-links">Suporte dos navegadores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../atributes">
+                        <span class="footer-icons"><i class="fa-solid fa-earth-americas"></i></span>
+                        <span class="footer-links">Atributos globais</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">
+                        <span class="footer-icons"><i class="fa-solid fa-user-group footer-icons"></i></span>
+                        <span class="footer-links">Sobre Nós</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="footer-description">
+                <p>IFNMG - Campus Montes Claros</p>
+                <p>Desenvolvimento WEB</p>
+                <p>&copy;2023 - <a href="#">Equipe 4</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
