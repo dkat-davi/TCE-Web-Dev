@@ -68,3 +68,16 @@ window.addEventListener('resize', function() {
     menuIcon.classList.add('fa-bars')
     menuIcon.classList.remove('fa-x')
 })
+
+// links de referências do references.html
+function scrollToElement(id) {
+    const header = document.querySelector('header');
+    const headerHeight = header.offsetHeight;
+    var element = document.getElementById(id);
+    var topPos = element.offsetTop - (headerHeight + 10);
+    element.style.scrollMarginTop = (headerHeight + 10) + "px";
+    window.scrollTo({
+      top: topPos,
+      behavior: "smooth"
+    });
+}

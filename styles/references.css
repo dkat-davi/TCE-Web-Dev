@@ -33,7 +33,6 @@ body::-webkit-scrollbar {
 
 main {
     padding: 3rem 2rem;
-    margin-top: 3rem;
 }
 
 main h1 {
@@ -100,7 +99,7 @@ div.navegation-links-right-div {
 
 .table-items {
     width: 80%;
-    margin: 2rem auto;
+    margin: 3rem auto;
 }
 
 .table-item-header {
@@ -120,10 +119,12 @@ div.navegation-links-right-div {
     background-color: var(--terciary-color);
     width: 40%;
     margin-right: 0.5rem;
+    padding: 0.3rem 0rem;
 }
 .table-item-header p:last-child {
     background-color: var(--terciary-color);
     width: 60%;
+    padding: 0.3rem 0rem;
 }
 
 .table-item-items {
@@ -140,6 +141,7 @@ div.navegation-links-right-div {
     border-radius: .6rem;
     overflow: hidden;
     font-size: 1.5rem;
+    padding: 0.3rem 0.5rem;
 }
 
 .table-item-items div:first-child {
@@ -197,5 +199,51 @@ div.navegation-links-right-div {
     
     .table-item-items div:last-child {
         width: 70%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+
+    .table-item-header p:first-child {
+        width: 25%;
+        font-size: 2.5rem;
+    }
+    
+    .table-item-header p:last-child {
+        width: 75%;
+        font-size: 2.5rem;
+    }
+
+    .table-item-items div:first-child {
+        width: 25%;
+        font-size: 2.5rem;
+    }
+    
+    .table-item-items div:last-child {
+        width: 75%;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1550px) {
+
+    .table-item-header p:first-child {
+        width: 20%;
+        font-size: 3rem;
+    }
+    
+    .table-item-header p:last-child {
+        width: 80%;
+        font-size: 3rem;
+    }
+
+    .table-item-items div:first-child {
+        width: 20%;
+        font-size: 3rem;
+    }
+    
+    .table-item-items div:last-child {
+        width: 80%;
+        font-size: 2rem;
     }
 }
