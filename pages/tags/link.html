@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag progress</title>
+    <title>Tag link</title>
 
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="../../styles/tags.css">
@@ -59,11 +59,11 @@
                     <p id="back">
                         <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Voltar</span></a>
                     </p>
-                    <h1 class="green-background" >Tag &lt;progress&gt;</h1>
+                    <h1 class="green-background" >Tag &lt;link&gt;</h1>
                     <p id="nextPrevious">
-                        <a href="./ol.html" id="previous">Anterior</a>
+                        <a href="./img.html" id="previous">Anterior</a>
                         <span>|</span>
-                        <a href="./samp.html" id="next">Próximo</a>
+                        <a href="./meta.html" id="next">Próximo</a>
                     </p>
                 </div>
                 <div class="definicoes">
@@ -71,13 +71,9 @@
                         Definições e uso
                     </h2>
                     <p>
-                        A tag &lt;progress&gt; representa o progresso de conclusão de uma tarefa. <br><br>
-                        Dica: Sempre adicione a tag &lt;label&gt; para as melhores práticas de acessibilidade. <br><br>
-                        Dica: Use a tag &lt;progress&gt; em conjunto com o JavaScript para exibir o progresso de uma
-                        tarefa. <br><br>
-                        Nota: A tag &lt;progress&gt; não é adequada para representar um medidor (por exemplo, uso de
-                        espaço em disco ou relevância de um resultado de consulta). Para representar um medidor,
-                        use a tag &lt;meter&gt;. <br><br>
+                        A tag &lt;link&gt; define uma relação entre o documento atual e um recurso externo. <br><br>
+                        A tag &lt;link&gt; é usada mais frequentemente para vincular à folhas de estilo externas ou para adicionar um <i>favicon</i> ao seu site. <br><br>
+                        O elemento &lt;link&gt; é um elemento vazio, contendo apenas atributos.
                     </p>
                 </div>
                 <div class="exemplos">
@@ -86,8 +82,9 @@
                     </h2>
                     <div class="codigo">
                         <pre><code>
-&lt;label for="file"&gt;Baixando progresso:&lt;/label&gt;
-&lt;progress id="file" value="32" max="100"&gt; 32% &lt;/progress&gt;
+&lt;head&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
                         </code></pre>
                     </div>
                     <button id="open-modal" onclick="openExample()">Testar exemplo</button>
@@ -102,10 +99,11 @@
 &lt;html&gt;
 &lt;body&gt;
 
-&lt;h1&gt;Tag progress&lt;/h1&gt;
+&lt;h1&gt;Tag link&lt;/h1&gt;
 
-&lt;label for="file"&gt;Baixando progresso:&lt;/label&gt;
-&lt;progress id="file" value="32" max="100"&gt; 32% &lt;/progress&gt;
+&lt;head&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;
@@ -113,10 +111,12 @@
                         </div>
                         <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
                         <div class="right-side modal-div">
-                            <h1>Tag progress</h1>
+                            <h1>Tag link</h1>
 
-                            &lt;label for="file"&gt;Baixando progresso:&lt;/label&gt;
-                            &lt;progress id="file" value="32" max="100"&gt; 32% &lt;/progress&gt;
+                            &lt;head&gt;
+                            &lt;link rel="stylesheet" href="styles.css"&gt;
+
+                            &lt;/head&gt;
                         </div>
                     </dialog>
                 </div>
@@ -134,14 +134,49 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="td-atributos"><span>max</span></td>
-                                <td class="td-valor">number</td>
-                                <td class="td-descricao">Especifica o quanto de trabalho a tarefa requer no total. O valor padrão é 1</td>
+                                <td class="td-atributos"><span>crossorigin</span></td>
+                                <td class="td-valor">anonymous, use-credentials</td>
+                                <td class="td-descricao">Especifica como o elemento lida com solicitações Cross-Origin</td>
                             </tr>
                             <tr>
-                                <td class="td-atributos">value</td>
-                                <td class="td-valor">number</td>
-                                <td class="td-descricao">Especifica quanto da tarefa já foi concluído</td>
+                                <td class="td-atributos">href</td>
+                                <td class="td-valor">URL</td>
+                                <td class="td-descricao">Especifica a localização do documento vinculado</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">hreflang</td>
+                                <td class="td-valor">language_code</td>
+                                <td class="td-descricao">Especifica o idioma do texto no documento vinculado</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">media</td>
+                                <td class="td-valor">media_query</td>
+                                <td class="td-descricao">Especifica em qual dispositivo o documento vinculado será exibido</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">referrerpolicy</td>
+                                <td class="td-valor">no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, unsafe-url</td>
+                                <td class="td-descricao">Especifica qual referenciador usar ao buscar o recurso</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">rel</td>
+                                <td class="td-valor">alternate, author, dns-prefetch, help, icon, license, next, pingback, preconnect, prefetch, preload, prerender, prev, search, stylesheet</td>
+                                <td class="td-descricao">Obrigatório. Especifica a relação entre o documento atual e o documento vinculado</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">sizes</td>
+                                <td class="td-valor">HeightxWidth, any</td>
+                                <td class="td-descricao">Especifica o tamanho do recurso vinculado. Somente para rel="icon"</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">title</td>
+                                <td class="td-valor"></td>
+                                <td class="td-descricao">Define uma folha de estilo preferida ou alternativa</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">type/td>
+                                <td class="td-valor">media_type</td>
+                                <td class="td-descricao">Especifica o tipo de mídia do documento vinculado</td>
                             </tr>
                         </tbody>
                     </table>
