@@ -2,7 +2,7 @@ section{
     display: flex;
     flex-direction: column;
     margin: auto;
-    background-image: url('../assets/home/background-home.png');
+    background-image: url('../assets/home/background.jpg');
     background-size: cover;
     background-position: right bottom;
 }
