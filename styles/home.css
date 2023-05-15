@@ -213,7 +213,7 @@ section.about-us{
 
     .items-tech{
         width: 35rem;
-        margin-top: 7rem;
+        margin-top: 0rem;
         display: flex;
         flex-direction: column;
         align-items: center;
