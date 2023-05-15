@@ -8,6 +8,8 @@ section{
 }
 
 #first-page{
+    position: relative;
+    z-index: 0;
     color: white;
     width:30rem;
     height: 40rem;
@@ -36,11 +38,24 @@ section{
     border-radius: 3rem;
 }
 
-.wave{
+.container{
+    position: relative;
+    padding-bottom: 70rem;
+}
+
+.svg-container{
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: 110%;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* height: 110%; */
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 section.technologies{
@@ -166,15 +181,21 @@ section.about-us{
     z-index: 2;
 }
 
-.arrow{
-    margin-left: -30px;
+.fa-arrow-circle-right{
+    margin-left: -2.5rem;
     z-index: 1;
+    font-size: 7rem;
+    color: var(--secondary-color);
 }
 
 @media screen and (min-width: 768px) {
     section{
         display: flex;
         justify-content: flex-start;
+    }
+
+    .container{
+        padding-bottom: 77rem;
     }
 
     #first-page{
@@ -236,17 +257,10 @@ section.about-us{
 
     .content{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .text-about{
-        margin-right: 10rem;
-    }
-
-    .text-about h3, .text-about h2{
-        text-align: left;
+        margin: auto;
     }
 
     .img-people img{
