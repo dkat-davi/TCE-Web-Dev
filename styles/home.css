@@ -181,11 +181,23 @@ section.about-us{
     z-index: 2;
 }
 
-.fa-arrow-circle-right{
+main .scroll-right-button i{
     margin-left: -2.5rem;
     z-index: 1;
-    font-size: 7rem;
-    color: var(--secondary-color);
+    font-size: 5rem;
+    list-style: none;
+    display: block;
+    background-color: var(--terciary-color);
+    padding: 1.5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+main .scroll-right-button i:hover, main .scroll-left-button i:hover{
+    background-color: var(--secondary-color);
+    color: var(--color-white);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
