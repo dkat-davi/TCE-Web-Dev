@@ -7,7 +7,7 @@ table{
     width: 95vw;
 }
 th{
-    background-color: #3E606F;
+    background-color: #91AA9D;
     padding: .5rem 1rem;
     border-radius: .3rem;
     text-align: center;
@@ -21,21 +21,22 @@ th{
     width: 10%;
 }
 td{
-    background-color: #91AA9D;
+    background-color: #3E606F;
     padding: .5rem 1rem;
     border-radius: .3rem;
     height: 4rem;
     text-align: center;
+    color: #EDF0F2;
 }
 
-.fa-check-circle{
-    color: green;
+.fa-check{
+    color: #193441;
     font-size: 4rem;
     margin: 0;
     padding: 0;
 }
-.fa-times-circle{
-    color: red;
+.fa-xmark{
+    color: #193441;
     font-size: 4rem;
     margin: 0;
     padding: 0;
