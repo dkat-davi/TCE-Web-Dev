@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Atributos Globais</title>
 
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/tags.css">
     <link rel="stylesheet" href="../styles/atributes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="../js/script.js" defer></script>
+    <script src="../../js/script.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1><a href="../index.html">Projeto WEB</a></h1>
+            <h1><a href="../../index.html">Projeto WEB</a></h1>
 
             <nav>
                 <ul>
@@ -31,35 +32,35 @@
                     <li id="references">
                         <ul>
                             <li>
-                                <a href="references.html">
+                                <a href="../references.html">
                                     <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="../pages/browsers.html">
+                                <a href="../browsers">
                                     <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="atributes.html">
+                                <a href="../atributes.html">
                                     <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="about.html">Sobre nós</a>
+                        <a href="../about.html">Sobre nós</a>
                     </li>
                 </ul>
             </nav>
-
             <p>
                 <i class="fa-solid fa-bars" id="menu-icon"
                     onclick="handleDropdonwMenuClick('header nav', '#menu-icon')"></i>
             </p>
         </header>
         <main>
-            <div><h1>Atributos Globais</h1></div>
+            <section class="wrapper">
+                <div><h1>Atributos Globais</h1></div>
 
             <div><p id="desc">Os atributos globais são atributos que podem ser utilizados com todos os elementos HTML</p></div>
 
@@ -132,29 +133,30 @@
                     </tbody>
                 </table>
             </div>
+            </section>
         </main>
         <footer>
             <ul>
                 <li>
-                    <a href="references.html">
+                    <a href="../references.html">
                         <span class="footer-icons"><i class="fa-solid fa-code"></i></span>
                         <span class="footer-links">Tags HTML</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../browsers">
                         <span class="footer-icons"><i class="fa-brands fa-chrome"></i>
                         </span><span class="footer-links">Suporte dos navegadores</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../atributes.html">
                         <span class="footer-icons"><i class="fa-solid fa-earth-americas"></i></span>
                         <span class="footer-links">Atributos globais</span>
                     </a>
                 </li>
                 <li>
-                    <a href="about.html">
+                    <a href="../about.html">
                         <span class="footer-icons"><i class="fa-solid fa-user-group footer-icons"></i></span>
                         <span class="footer-links">Sobre Nós</span>
                     </a>
@@ -163,7 +165,7 @@
             <div id="footer-description">
                 <p>IFNMG - Campus Montes Claros</p>
                 <p>Desenvolvimento WEB</p>
-                <p>&copy;2023 - <a href="about.html">Equipe 4</a></p>
+                <p>&copy;2023 - <a href="../about.html">Equipe 4</a></p>
             </div>
         </footer>
     </div>
