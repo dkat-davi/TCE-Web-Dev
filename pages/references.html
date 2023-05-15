@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,167 +9,255 @@
 
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/references.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/tags.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="../js/script.js" defer></script>
 </head>
+
 <body>
     <div class="container">
         <header>
-                <h1><a href="../index.html">Projeto WEB</a></h1>
-        
-                <nav>
-                    <ul>
-        
-                        <li onclick="handleDropdonwMenuReferencesClick()">
-                            <span>Referências</span> <i class="fa-solid fa-angle-down" id="references-menu-icon">
+            <h1><a href="../index.html">Projeto WEB</a></h1>
+
+            <nav>
+                <ul>
+
+                    <li onclick="handleDropdonwMenuReferencesClick()">
+                        <span>Referências</span> <i class="fa-solid fa-angle-down" id="references-menu-icon">
                         </i>
-                        </li>
-                        <li id="references">
-                            <ul>
-                                <li>
-                                    <a href="references.html">
-                                        <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="../pages/browsers.html">
-                                        <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="../pages/atributes.html">
-                                        <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href=".\about.html">Sobre nós</a>
-                        </li>
-                    </ul>
-                </nav>
-                <p>
-                    <i class="fa-solid fa-bars" id="menu-icon"
+                    </li>
+                    <li id="references">
+                        <ul>
+                            <li>
+                                <a href="references.html">
+                                    <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/browsers.html">
+                                    <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/atributes.html">
+                                    <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=".\about.html">Sobre nós</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>
+                <i class="fa-solid fa-bars" id="menu-icon"
                     onclick="handleDropdonwMenuClick('header nav', '#menu-icon')"></i>
-                </p>
+            </p>
         </header>
         <main>
-            <h1>Referências HTML</h1>
-            <div class="navegation-links-div">
-                <ul class="navegation-links">
-                    <li><a href="#area" onclick="scrollToElement('area')">a</a></li>
-                    <li><a href="#blockquote" onclick="scrollToElement('blockquote')">b</a></li>
-                    <li><a href="#canvas" onclick="scrollToElement('canvas')">c</a></li>
-                    <li><a href="#data" onclick="scrollToElement('data')">d</a></li>
-                    <li><a href="#embed" onclick="scrollToElement('embed')">e</a></li>
-                    <li><a href="#header" onclick="scrollToElement('header')">h</a></li>
-                    <li><a href="#i" onclick="scrollToElement('i')">i</a></li>
-                    <li><a href="#meta" onclick="scrollToElement('meta')">m</a></li>
-                    <li><a href="#nav" onclick="scrollToElement('nav')">n</a></li>
-                    <li><a href="#progress" onclick="scrollToElement('progress')">p</a></li>
-                    <li><a href="#samp" onclick="scrollToElement('samp')">s</a></li>
-                    <li><a href="#table" onclick="scrollToElement('table')">t</a></li>
-                </ul>
-                <br>
-                <a href="#">Suporte dos Navegadores</a>
-            </div>
-            <div class="navegation-links-right-div">
-                <ul class="navegation-links-right">
-                    <li><a href="#area" onclick="scrollToElement('area')">a</a></li>
-                    <li><a href="#blockquote" onclick="scrollToElement('blockquote')">b</a></li>
-                    <li><a href="#canvas" onclick="scrollToElement('canvas')">c</a></li>
-                    <li><a href="#data" onclick="scrollToElement('data')">d</a></li>
-                    <li><a href="#embed" onclick="scrollToElement('embed')">e</a></li>
-                    <li><a href="#header" onclick="scrollToElement('header')">h</a></li>
-                    <li><a href="#i" onclick="scrollToElement('i')">i</a></li>
-                    <li><a href="#meta" onclick="scrollToElement('meta')">m</a></li>
-                    <li><a href="#nav" onclick="scrollToElement('nav')">n</a></li>
-                    <li><a href="#progress" onclick="scrollToElement('progress')">p</a></li>
-                    <li><a href="#samp" onclick="scrollToElement('samp')">s</a></li>
-                    <li><a href="#table" onclick="scrollToElement('table')">t</a></li>
-                </ul>
-            </div>
-            <div class="table-items">
-                <div class="table-item-header"><p>Tag</p><p>Descrição</p></div>
-                <div class="table-item-items" id="area">
-                    <div><a href="#">&lt;area&gt;</a></div><div><p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
+            <section class="wrapper">
+                <h1>Referências HTML</h1>
+                <div class="navegation-links-div">
+                    <ul class="navegation-links">
+                        <li><a href="#area" onclick="scrollToElement('area')">a</a></li>
+                        <li><a href="#blockquote" onclick="scrollToElement('blockquote')">b</a></li>
+                        <li><a href="#canvas" onclick="scrollToElement('canvas')">c</a></li>
+                        <li><a href="#data" onclick="scrollToElement('data')">d</a></li>
+                        <li><a href="#embed" onclick="scrollToElement('embed')">e</a></li>
+                        <li><a href="#header" onclick="scrollToElement('header')">h</a></li>
+                        <li><a href="#i" onclick="scrollToElement('i')">i</a></li>
+                        <li><a href="#meta" onclick="scrollToElement('meta')">m</a></li>
+                        <li><a href="#nav" onclick="scrollToElement('nav')">n</a></li>
+                        <li><a href="#progress" onclick="scrollToElement('progress')">p</a></li>
+                        <li><a href="#samp" onclick="scrollToElement('samp')">s</a></li>
+                        <li><a href="#table" onclick="scrollToElement('table')">t</a></li>
+                    </ul>
+                    <br>
+                    <a href="#">Suporte dos Navegadores</a>
                 </div>
-                <div class="table-item-items" id="blockquote">
-                    <div><a href="#">&lt;blockquote&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
+                <div class="navegation-links-right-div">
+                    <ul class="navegation-links-right">
+                        <li><a href="#area" onclick="scrollToElement('area')">a</a></li>
+                        <li><a href="#blockquote" onclick="scrollToElement('blockquote')">b</a></li>
+                        <li><a href="#canvas" onclick="scrollToElement('canvas')">c</a></li>
+                        <li><a href="#data" onclick="scrollToElement('data')">d</a></li>
+                        <li><a href="#embed" onclick="scrollToElement('embed')">e</a></li>
+                        <li><a href="#header" onclick="scrollToElement('header')">h</a></li>
+                        <li><a href="#i" onclick="scrollToElement('i')">i</a></li>
+                        <li><a href="#meta" onclick="scrollToElement('meta')">m</a></li>
+                        <li><a href="#nav" onclick="scrollToElement('nav')">n</a></li>
+                        <li><a href="#progress" onclick="scrollToElement('progress')">p</a></li>
+                        <li><a href="#samp" onclick="scrollToElement('samp')">s</a></li>
+                        <li><a href="#table" onclick="scrollToElement('table')">t</a></li>
+                    </ul>
                 </div>
-                <div class="table-item-items" id="canvas">
-                    <div><a href="tags/canvas.html">&lt;canvas&gt;</a></div><div><p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
+                <div class="table-items">
+                    <div class="table-item-header">
+                        <p>Tag</p>
+                        <p>Descrição</p>
+                    </div>
+                    <div class="table-item-items" id="area">
+                        <div><a href="#">&lt;area&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="blockquote">
+                        <div><a href="#">&lt;blockquote&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="canvas">
+                        <div><a href="tags/canvas.html">&lt;canvas&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="data">
+                        <div><a href="#">&lt;data&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="details">
+                        <div><a href="#">&lt;details&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="dialog">
+                        <div><a href="#">&lt;dialog&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="embed">
+                        <div><a href="#">&lt;embed&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="header">
+                        <div><a href="#">&lt;header&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Distinctio dolore dignissimos cum provident, officiis laboriosam Lorem, ipsum dolor sit
+                                amet consectetur adipisicing elit. Incidunt assumenda autem, nulla iure odio
+                                necessitatibus sint asperiores officiis optio illum accusamus repudiandae culpa
+                                quisquam? Optio quam dolore sed quo quis quasi, minus numquam eveniet dicta doloribus
+                                quia sint quos, maiores nihil necessitatibus maxime fugiat harum a ad officiis,
+                                assumenda hic. labore officia vel voluptatem qui! adipisicing elit. Necessitatibus,
+                                harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="h1toh6">
+                        <div><a href="#">&lt;h1&gt; ao &lt;h6&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="i">
+                        <div><a href="#">&lt;i&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="iframes">
+                        <div><a href="#">&lt;iframes&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="img">
+                        <div><a href="#">&lt;img&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="meta">
+                        <div><a href="#">&lt;meta&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="meter">
+                        <div><a href="#">&lt;meter&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="nav">
+                        <div><a href="#">&lt;nav&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="progress">
+                        <div><a href="#">&lt;progress&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="samp">
+                        <div><a href="#">&lt;samp&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="area">
+                        <div><a href="#">&lt;script&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="small">
+                        <div><a href="#">&lt;small&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="sub">
+                        <div><a href="#">&lt;sub&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="summary">
+                        <div><a href="#">&lt;summary&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="table">
+                        <div><a href="#">&lt;table&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="templates">
+                        <div><a href="#">&lt;templates&gt;</a></div>
+                        <div>
+                            <p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
+                    <div class="table-item-items" id="tr">
+                        <div><a href="#">&lt;tr&gt;</a></div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="table-item-items" id="data">
-                    <div><a href="#">&lt;data&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
+                <div class="up-arrow">
+                    <p>
+                        <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+                    </p>
                 </div>
-                <div class="table-item-items" id="details">
-                    <div><a href="#">&lt;details&gt;</a></div><div><p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="dialog">
-                    <div><a href="#">&lt;dialog&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="embed">
-                    <div><a href="#">&lt;embed&gt;</a></div><div><p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="header">
-                    <div><a href="#">&lt;header&gt;</a></div><div><p>Lorem sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolore dignissimos cum provident, officiis laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda autem, nulla iure odio necessitatibus sint asperiores officiis optio illum accusamus repudiandae culpa quisquam? Optio quam dolore sed quo quis quasi, minus numquam eveniet dicta doloribus quia sint quos, maiores nihil necessitatibus maxime fugiat harum a ad officiis, assumenda hic. labore officia vel voluptatem qui! adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="h1toh6">
-                    <div><a href="#">&lt;h1&gt; ao &lt;h6&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="i">
-                    <div><a href="#">&lt;i&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="iframes">
-                    <div><a href="#">&lt;iframes&gt;</a></div><div><p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="img">
-                    <div><a href="#">&lt;img&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="meta">
-                    <div><a href="#">&lt;meta&gt;</a></div><div><p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="meter">
-                    <div><a href="#">&lt;meter&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="nav">
-                    <div><a href="#">&lt;nav&gt;</a></div><div><p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="progress">
-                    <div><a href="#">&lt;progress&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="samp">
-                    <div><a href="#">&lt;samp&gt;</a></div><div><p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="area">
-                    <div><a href="#">&lt;script&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="small">
-                    <div><a href="#">&lt;small&gt;</a></div><div><p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="sub">
-                    <div><a href="#">&lt;sub&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="summary">
-                    <div><a href="#">&lt;summary&gt;</a></div><div><p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="table">
-                    <div><a href="#">&lt;table&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="templates">
-                    <div><a href="#">&lt;templates&gt;</a></div><div><p>Lorem sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-                <div class="table-item-items" id="tr">
-                    <div><a href="#">&lt;tr&gt;</a></div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, harum?</p></div>
-                </div>
-            </div>
-            <div class="up-arrow">
-                <p>
-                    <a href="#"><i class="fa-solid fa-angle-up"></i></a>
-                </p>
-            </div>
+            </section>
         </main>
         <footer>
             <ul>
@@ -205,4 +294,5 @@
         </footer>
     </div>
 </body>
+
 </html>
