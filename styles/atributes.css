@@ -49,7 +49,7 @@ table {
 th{
     background-color: #3E606F;
     padding: .5rem 1rem;
-    border-radius: .3rem;
+    border-radius: .5rem;
     text-align: left;
     height: 4rem;
     color: #EDF0F2;
@@ -58,7 +58,7 @@ th{
 td{
     background-color: #91AA9D;
     padding: .5rem 1rem;
-    border-radius: .3rem;
+    border-radius: .5rem;
     height: 4rem;
 }
 
