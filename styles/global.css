@@ -16,7 +16,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body, a {
+body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
 }
