@@ -88,7 +88,7 @@ div.navegation-links-right-div {
     margin: 0 auto;
     padding: 0.5rem 0;
     text-align: center; 
-    background-color: blue;
+    background-color: var(--secondary-color);
     position: fixed;
     top: 50%;
     right: 0;
