@@ -1,11 +1,11 @@
 .main-title h1{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 table{
     margin: 3rem auto;
     border-spacing: .8rem;
-    width: 100%;
+    width: 80%;
 }
 th{
     background-color: #91AA9D;
@@ -20,6 +20,10 @@ th{
 }
 .col-nav{
     width: 10%;
+}
+.col-nav img{
+    width: 23px;
+    height: 23px;
 }
 td{
     background-color: #3E606F;
@@ -65,5 +69,9 @@ td{
     }
     td{
         font-size: 1.6rem;
+    }
+    .col-nav img{
+        width: auto;
+        height: auto;
     }
 }
