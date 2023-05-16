@@ -61,7 +61,6 @@ main p {
 }
 
 .navegation-links-right {
-    display: none;
     list-style: none;
     margin: 0rem 0rem;
     padding: 0rem;
@@ -89,7 +88,7 @@ div.navegation-links-right-div {
     margin: 0 auto;
     padding: 0.5rem 0;
     text-align: center; 
-    background-color: var(--secondary-color);
+    background-color: blue;
     position: fixed;
     top: 50%;
     right: 0;
