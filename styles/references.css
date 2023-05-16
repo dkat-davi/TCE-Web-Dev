@@ -118,12 +118,12 @@ div.navegation-links-right-div {
     background-color: var(--terciary-color);
     width: 40%;
     margin-right: 0.5rem;
-    padding: 0.3rem 0rem;
+    padding: 0.5rem 0rem;
 }
 .table-item-header p:last-child {
     background-color: var(--terciary-color);
     width: 60%;
-    padding: 0.3rem 0rem;
+    padding: 0.5rem 0rem;
 }
 
 .table-item-items {
@@ -140,7 +140,7 @@ div.navegation-links-right-div {
     border-radius: .6rem;
     overflow: hidden;
     font-size: 1.5rem;
-    padding: 0.3rem 0.5rem;
+    padding: 0.5rem;
 }
 
 .table-item-items div:first-child {
