@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 }
 
 main {
-    padding: 3rem 2rem;
+    padding: 0;
 }
 
 main h1 {
