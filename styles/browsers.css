@@ -1,5 +1,6 @@
 .main-title h1{
     font-size: 3rem;
+    text-align: center;
 }
 table{
     margin: 3rem auto;
@@ -27,17 +28,18 @@ td{
     height: 4rem;
     text-align: center;
     color: #EDF0F2;
+    font-size: 1.25rem;
 }
 
 .fa-check{
     color: #193441;
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin: 0;
     padding: 0;
 }
 .fa-xmark{
     color: #7F2B22;
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin: 0;
     padding: 0;
 }
@@ -48,5 +50,20 @@ td{
     }
     table{
         width: 70vw;
+    }
+    .fa-check{
+        color: #193441;
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+    .fa-xmark{
+        color: #7F2B22;
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+    td{
+        font-size: 1.6rem;
     }
 }
