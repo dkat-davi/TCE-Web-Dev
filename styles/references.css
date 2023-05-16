@@ -62,8 +62,8 @@ main p {
 
 .navegation-links-right {
     list-style: none;
-    margin: 0rem 0rem;
-    padding: 0rem;
+    margin: 0 0;
+    padding: 0;
     margin-top: 0rem;
     text-align: center;
 }
