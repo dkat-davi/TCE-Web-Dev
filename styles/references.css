@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 }
 
 main {
-    padding: 3rem 2rem;
+    padding: 0;
 }
 
 main h1 {
@@ -62,8 +62,8 @@ main p {
 
 .navegation-links-right {
     list-style: none;
-    margin: 0rem 0rem;
-    padding: 0rem;
+    margin: 0 0;
+    padding: 0;
     margin-top: 0rem;
     text-align: center;
 }
@@ -118,12 +118,12 @@ div.navegation-links-right-div {
     background-color: var(--terciary-color);
     width: 40%;
     margin-right: 0.5rem;
-    padding: 0.3rem 0rem;
+    padding: 0.5rem 0rem;
 }
 .table-item-header p:last-child {
     background-color: var(--terciary-color);
     width: 60%;
-    padding: 0.3rem 0rem;
+    padding: 0.5rem 0rem;
 }
 
 .table-item-items {
@@ -140,7 +140,7 @@ div.navegation-links-right-div {
     border-radius: .6rem;
     overflow: hidden;
     font-size: 1.5rem;
-    padding: 0.3rem 0.5rem;
+    padding: 0.5rem;
 }
 
 .table-item-items div:first-child {
@@ -193,7 +193,6 @@ div.navegation-links-right-div {
 
     .table-item-items div:first-child {
         width: 30%;
-        font-size: 2rem;
     }
     
     .table-item-items div:last-child {
@@ -205,22 +204,18 @@ div.navegation-links-right-div {
 
     .table-item-header p:first-child {
         width: 25%;
-        font-size: 2.5rem;
     }
     
     .table-item-header p:last-child {
         width: 75%;
-        font-size: 2.5rem;
     }
 
     .table-item-items div:first-child {
         width: 25%;
-        font-size: 2.5rem;
     }
     
     .table-item-items div:last-child {
         width: 75%;
-        font-size: 1.5rem;
     }
 }
 
@@ -228,21 +223,19 @@ div.navegation-links-right-div {
 
     .table-item-header p:first-child {
         width: 20%;
-        font-size: 2.5rem;
     }
     
     .table-item-header p:last-child {
         width: 80%;
-        font-size: 2.5rem;
     }
 
     .table-item-items div:first-child {
         width: 20%;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     
     .table-item-items div:last-child {
         width: 80%;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }

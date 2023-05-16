@@ -1,10 +1,11 @@
 .main-title h1{
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
 }
 table{
     margin: 3rem auto;
     border-spacing: .8rem;
-    width: 95vw;
+    width: 80%;
 }
 th{
     background-color: #91AA9D;
@@ -20,6 +21,10 @@ th{
 .col-nav{
     width: 10%;
 }
+.col-nav img{
+    width: 23px;
+    height: 23px;
+}
 td{
     background-color: #3E606F;
     padding: .5rem 1rem;
@@ -27,17 +32,18 @@ td{
     height: 4rem;
     text-align: center;
     color: #EDF0F2;
+    font-size: 1.25rem;
 }
 
 .fa-check{
     color: #193441;
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin: 0;
     padding: 0;
 }
 .fa-xmark{
-    color: #193441;
-    font-size: 4rem;
+    color: #7F2B22;
+    font-size: 2.5rem;
     margin: 0;
     padding: 0;
 }
@@ -48,5 +54,24 @@ td{
     }
     table{
         width: 70vw;
+    }
+    .fa-check{
+        color: #193441;
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+    .fa-xmark{
+        color: #7F2B22;
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+    td{
+        font-size: 1.6rem;
+    }
+    .col-nav img{
+        width: auto;
+        height: auto;
     }
 }
