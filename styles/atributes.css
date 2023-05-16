@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 768px){
     table{
-        max-width: 87%;
+        max-width: 70%;
     }
 }
 
@@ -23,22 +23,32 @@ body{
 
 #desc {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     color: #D9D9D9;
-    max-width: 98%;
+    max-width: 100%;
 }
 
 #atributestable {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.main-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 table {
@@ -49,7 +59,7 @@ table {
 th{
     background-color: #91AA9D;
     padding: .5rem 1rem;
-    border-radius: .5rem;
+    border-radius: .4rem;
     text-align: left;
     height: 4rem;
     color: #EDF0F2;
@@ -58,7 +68,7 @@ th{
 td{
     background-color: #3E606F;
     padding: .5rem 1rem;
-    border-radius: .5rem;
+    border-radius: .4rem;
     height: 4rem;
     color: #EDF0F2;
 }
@@ -69,4 +79,10 @@ td{
 
 .col-descricao {
     width: 80%;
+}
+
+.up-arrow p a{
+    text-align: center;
+    color: #EDF0F2;
+    font-size: 4rem;
 }
