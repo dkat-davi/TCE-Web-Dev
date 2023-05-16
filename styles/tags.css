@@ -193,6 +193,7 @@ code {
 #modal .modal-div {
     background-color: var(--secondary-color);
     padding: 1rem;
+    padding-left: 3rem;
     border-radius: .5rem;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.315);
 }
@@ -201,6 +202,9 @@ code {
     margin-bottom: 2rem;
 }
 
+#right-side{
+    padding-left: 10rem;
+}
 .atributos table {
     width: 100%;
     border-spacing: .5rem;

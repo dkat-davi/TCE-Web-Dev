@@ -27,7 +27,6 @@ body::-webkit-scrollbar {
 }
 
 .container {
-    /* background-image: url(../assets/about/background-image.png); */
     background-repeat: no-repeat;
     background-position: top -5rem left -10rem;
 }
@@ -40,9 +39,8 @@ main {
 main h1 {
     color: var(--color-white);
     font-weight: 600;
-    text-align: left;
+    text-align: center;
     text-shadow: .2rem .1rem 0 #3a5547;
-    margin-top: 4rem;
     white-space: nowrap;
     letter-spacing: .2rem;
 }
@@ -116,6 +114,7 @@ main .scroll-right-button i, main .scroll-left-button i{
     main h1 {
         font-size: 4.2rem;
         margin: 0rem 3rem;
+        text-align: left;
     }
 
     main .scroll-horizontal {
