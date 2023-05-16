@@ -193,7 +193,6 @@ div.navegation-links-right-div {
 
     .table-item-items div:first-child {
         width: 30%;
-        font-size: 2rem;
     }
     
     .table-item-items div:last-child {
@@ -205,22 +204,18 @@ div.navegation-links-right-div {
 
     .table-item-header p:first-child {
         width: 25%;
-        font-size: 2.5rem;
     }
     
     .table-item-header p:last-child {
         width: 75%;
-        font-size: 2.5rem;
     }
 
     .table-item-items div:first-child {
         width: 25%;
-        font-size: 2.5rem;
     }
     
     .table-item-items div:last-child {
         width: 75%;
-        font-size: 1.5rem;
     }
 }
 
@@ -228,21 +223,19 @@ div.navegation-links-right-div {
 
     .table-item-header p:first-child {
         width: 20%;
-        font-size: 2.5rem;
     }
     
     .table-item-header p:last-child {
         width: 80%;
-        font-size: 2.5rem;
     }
 
     .table-item-items div:first-child {
         width: 20%;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     
     .table-item-items div:last-child {
         width: 80%;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
