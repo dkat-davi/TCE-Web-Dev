@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag p</title>
+    <title>Tag Script</title>
 
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="../../styles/tags.css">
@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <header>
-                <h1><a href="../../index.html">Projeto WEB</a></h1>
+                <h1><a href="../index.html">Projeto WEB</a></h1>
         
                 <nav>
                     <ul>
@@ -37,7 +37,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../atributes.html">
+                                    <a href="../atributes">
                                         <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
                                     </a>
                                 </li>
@@ -59,7 +59,7 @@
                     <p id="back">
                         <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Voltar</span></a>
                     </p>
-                    <h1 class="green-background" >Tag &lt;p&gt;</h1>
+                    <h1 class="green-background" >Tag &lt;script&gt;</h1>
                     <p id="nextPrevious">
                         <a href="./button.html" id="previous">Anterior</a>
                         <span>|</span>
@@ -71,18 +71,20 @@
                         Definições e uso
                     </h2>
                     <p>
-                        A tag &lt;p&gt; define um parágrafo.<br><br>
-                        Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada elemento &lt;p&gt;.
+                        A tag &lt;script&gt; é usada para incorporar um script do lado do cliente (JavaScript). <br><br>
+                        O elemento &lt;script&gt; contém instruções de script ou aponta para um arquivo de script externo por meio do atributo src. <br><br>
+                        Usos comuns para JavaScript são manipulação de imagem, validação de formulário e alterações dinâmicas de conteúdo.
                     </p>
                 </div>
                 <div class="exemplos">
                     <h2 class="green-background">
                         Exemplos
                     </h2>
-                    
                     <div class="codigo">
                         <pre><code>
-&lt;p&gt;Isso é um texto dentro de um paragrafo.&lt;/p&gt;
+&lt;script&gt;
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+&lt;/script&gt;
                         </code></pre>
                     </div>
                     <button id="open-modal" onclick="openExample()">Testar exemplo</button>
@@ -96,16 +98,27 @@
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-&lt;h1&gt;Tag p&lt;/h1&gt;
-&lt;p&gt;Isso é um texto dentro de um paragrafo.&lt;/p&gt;
+
+&lt;h1&gt;Tag script&lt;/h1&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+&lt;/script&gt;
+
 &lt;/body&gt;
 &lt;/html&gt;
                             </code></pre>
                         </div>
                         <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
                         <div class="right-side modal-div">
-                            <h1>Tag p</h1>
-                            <p>Isso é um texto dentro de um paragrafo.</p>
+                            <h1>Tag script</h1>
+                            <p id="demo"></p>
+
+                            <script>
+                            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+                            </script> 
                         </div>
                     </dialog>
                 </div>
@@ -113,6 +126,66 @@
                     <h2 class="green-background">
                         Atributos
                     </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="td-atributos">Atributo</th>
+                                <th class="td-valor">Valor</th>
+                                <th class="td-descricao">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-atributos">async</td>
+                                <td class="td-valor">async</td>
+                                <td class="td-descricao">Especifica que o script é baixado em paralelo à análise da página e executado assim que estiver disponível (antes da conclusão da análise) (somente para scripts externos).</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">crossorigin</td>
+                                <td class="td-valor">anonymous <br>
+                                    use-credentials</td>
+                                <td class="td-descricao">Define o modo da solicitação para uma solicitação HTTP CORS.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">defer</td>
+                                <td class="td-valor">defer</td>
+                                <td class="td-descricao">Especifica que o script é baixado em paralelo à análise da página e executado após a conclusão da análise da página (somente para scripts externos).</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">integrity</td>
+                                <td class="td-valor">filehash</td>
+                                <td class="td-descricao">Permite que um navegador verifique o script obtido para garantir que o código nunca seja carregado se a fonte tiver sido manipulada.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">nomodule</td>
+                                <td class="td-valor">True <br>
+                                    False</td>
+                                <td class="td-descricao">Especifica que o script não deve ser executado em navegadores com suporte a módulos ES2015.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">referrerpolicy</td>
+                                <td class="td-valor">no-referrer <br>
+                                    no-referrer-when-downgrade <br>
+                                    origin <br>
+                                    origin-when-cross-origin <br>
+                                    same-origin <br>
+                                    strict-origin <br>
+                                    strict-origin-when-cross-origin <br>
+                                    unsafe-url</td>
+                                <td class="td-descricao">Especifica quais informações do referenciador enviar ao buscar um script.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">src</td>
+                                <td class="td-valor">URL</td>
+                                <td class="td-descricao">Especifica a URL de um arquivo de script externo.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">type</td>
+                                <td class="td-valor">scripttype</td>
+                                <td class="td-descricao">Especifica o tipo de mídia do script.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <p>Esta tag também suporta <a href="../atributes.html">Atributos Globais.</a></p>
                 </div>
             </section>

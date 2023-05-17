@@ -32,6 +32,7 @@ body::-webkit-scrollbar {
 
 main {
     padding: 0;
+    margin: 1.5rem 0 1rem;
 }
 
 main h1 {
@@ -39,7 +40,7 @@ main h1 {
     font-weight: 600;
     text-align: center;
     text-shadow: .2rem .1rem 0 #3a5547;
-    margin-top: 2rem;
+    margin: 3rem;
     white-space: nowrap;
     letter-spacing: .2rem;
 }
@@ -97,8 +98,8 @@ div.navegation-links-right-div {
 }
 
 .table-items {
-    width: 90%;
-    margin: 3rem auto;
+    width: 80%;
+    margin: 3rem auto 1rem;
 }
 
 .table-item-header {
@@ -176,11 +177,14 @@ div.navegation-links-right-div {
 
     main h1 {
         font-size: 4.2rem;
-        margin: 3rem 3rem;
     }
     
     .navegation-links {
         margin-top: 0rem;
+    }
+    
+    .table-items {
+        width: 70%;
     }
 
     .table-item-header p:first-child {

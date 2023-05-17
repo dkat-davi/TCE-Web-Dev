@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag p</title>
+    <title>Tags h1 a h6</title>
 
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="../../styles/tags.css">
@@ -37,7 +37,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../atributes.html">
+                                    <a href="../atributes">
                                         <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
                                     </a>
                                 </li>
@@ -59,11 +59,11 @@
                     <p id="back">
                         <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Voltar</span></a>
                     </p>
-                    <h1 class="green-background" >Tag &lt;p&gt;</h1>
+                    <h1 class="green-background" >Tags &lt;h1&gt; ao &lt;h6&gt;</h1>
                     <p id="nextPrevious">
-                        <a href="./button.html" id="previous">Anterior</a>
+                        <a href="./header.html" id="previous">Anterior</a>
                         <span>|</span>
-                        <a href="./code.html" id="next">Próximo</a>
+                        <a href="./i.html" id="next">Próximo</a>
                     </p>
                 </div>
                 <div class="definicoes">
@@ -71,18 +71,25 @@
                         Definições e uso
                     </h2>
                     <p>
-                        A tag &lt;p&gt; define um parágrafo.<br><br>
-                        Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada elemento &lt;p&gt;.
+                        As tags &lt;h1&gt; a &lt;h6&gt; são usadas para definir os cabeçalhos HTML.<br><br>
+                        A tag &lt;h1&gt; define o cabeçalho mais importante, enquantolt &lt;h6&gt; define o cabeçalho menos
+                        importante. <br><br>
+                        Nota: use apenas um &lt;h1&gt; por página, pois este deve representar o cabeçalho/assunto principal para toda a página. <br><br>
+                        Além disso, não pule níveis de cabeçalho - comece com &lt;h1&gt;, depois use &lt;h2&gt;, e assim por diante.                            
                     </p>
                 </div>
                 <div class="exemplos">
                     <h2 class="green-background">
                         Exemplos
                     </h2>
-                    
                     <div class="codigo">
                         <pre><code>
-&lt;p&gt;Isso é um texto dentro de um paragrafo.&lt;/p&gt;
+&lt;h1&gt;Esse é o cabeçalho 1&lt;/h1&gt;
+&lt;h2&gt;Esse é o cabeçalho 2&lt;/h2&gt;
+&lt;h3&gt;Esse é o cabeçalho 3&lt;/h3&gt;
+&lt;h4&gt;Esse é o cabeçalho 4&lt;/h4&gt;
+&lt;h5&gt;Esse é o cabeçalho 5&lt;/h5&gt;
+&lt;h6&gt;Esse é o cabeçalho 6&lt;/h6&gt;
                         </code></pre>
                     </div>
                     <button id="open-modal" onclick="openExample()">Testar exemplo</button>
@@ -96,16 +103,26 @@
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-&lt;h1&gt;Tag p&lt;/h1&gt;
-&lt;p&gt;Isso é um texto dentro de um paragrafo.&lt;/p&gt;
+
+&lt;h1&gt;Esse é o cabeçalho 1&lt;/h1&gt;
+&lt;h2&gt;Esse é o cabeçalho 2&lt;/h2&gt;
+&lt;h3&gt;Esse é o cabeçalho 3&lt;/h3&gt;
+&lt;h4&gt;Esse é o cabeçalho 4&lt;/h4&gt;
+&lt;h5&gt;Esse é o cabeçalho 5&lt;/h5&gt;
+&lt;h6&gt;Esse é o cabeçalho 6&lt;/h6&gt;
+
 &lt;/body&gt;
 &lt;/html&gt;
                             </code></pre>
                         </div>
                         <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
                         <div class="right-side modal-div">
-                            <h1>Tag p</h1>
-                            <p>Isso é um texto dentro de um paragrafo.</p>
+                            <h1>Esse é o cabeçalho 1</h1>
+                            <h2>Esse é o cabeçalho 2</h2>
+                            <h3>Esse é o cabeçalho 3</h3>
+                            <h4>Esse é o cabeçalho 4</h4>
+                            <h5>Esse é o cabeçalho 5</h5>
+                            <h6>Esse é o cabeçalho 6</h6>
                         </div>
                     </dialog>
                 </div>

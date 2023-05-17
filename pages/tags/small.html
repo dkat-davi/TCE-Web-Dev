@@ -54,39 +54,44 @@
                 </p>
         </header>
         <main>
-            <div id="previousTag" onclick="changeTagPage('a')">
-                <i class="fa-solid fa-angle-left" id="references-menu-icon"></i>
-            </div>
             <section class="wrapper">
                 <div id="title">
+                    <p id="back">
+                        <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Tags</span></a>
+                    </p>
                     <h1 class="green-background" >Tag &lt;small&gt;</h1>
+                    <p id="nextPrevious">
+                        <a href="./script.html" id="previous">Anterior</a>
+                        <span>|</span>
+                        <a href="./sub.html" id="next">Próximo</a>
+                    </p>
                 </div>
                 <div class="definicoes">
                     <h2 class="green-background">
                         Definições e uso
                     </h2>
                     <p>A tag &lt;small&gt; define textos menores (como copyrights e outros comentários de rodapé)<br><br>
-                        Dica: Embora essa tag não seja deprecada, é possível atingir um efeito mais rico usando
-                        CSS</p>
+                      Dica: Embora essa tag não seja deprecada, é possível atingir um efeito mais rico usando
+                      CSS</p>
                 </div>
                 <div class="exemplos">
                     <h2 class="green-background">
                         Exemplos
                     </h2>
                     <div class="codigo">
-                        <pre><code>
+                      <pre><code>
 &lt;p&gt;Este é um texto normal&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;Este é um texto menor.&lt;/small&gt;&lt;/p&gt;
-                        </code></pre>
-                    </div>
+                      </code></pre>
+                  </div>
                     <button id="open-modal" onclick="openExample()">Testar exemplo</button>
                     <dialog id="modal">
-                        <div id="close-modal">
-                            <h2>Exemplo</h2>
-                            <i class="fa-solid fa-xmark" onclick="closeExample()"></i>
-                        </div>
-                        <div class="left-side modal-div">
-                            <pre><code>
+                      <div id="close-modal">
+                          <h2 class="green-background" >Exemplo</h2>
+                          <i class="fa-solid fa-xmark" onclick="closeExample()"></i>
+                      </div>
+                      <div class="left-side modal-div">
+                          <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -98,21 +103,24 @@
 
 &lt;/body&gt;
 &lt;/html&gt;
-                            </code></pre>
-                        </div>
-                        <div class="right-side modal-div">
-                            <h1>Tag small</h1>
+                          </code></pre>
+                      </div>
+                      <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
+                      <div class="right-side modal-div">
+                        <h1>Tag small</h1>
 
-                            <p>Este é um texto normal</p>
-                            <p><small>Este é um texto menor.</small></p>
-                        </div>
-                    </dialog>
+                        <p>Este é um texto normal</p>
+                        <p><small>Este é um texto menor.</small></p>
+                      </div>
+                  </dialog>
+                </div>
+                <div class="atributos">
+                    <h2 class="green-background">
+                        Atributos
+                    </h2>
+                    <p>Esta tag suporta apenas <a href="../atributes.html">Atributos Globais.</a></p>
                 </div>
             </section>
-            <div id="nextTag" onclick="changeTagPage('a')">
-                <i class="fa-solid fa-angle-right" id="references-menu-icon"></i>
-            </div>
-            
         </main>
         <footer>
             <ul>
@@ -144,7 +152,7 @@
             <div id="footer-description">
                 <p>IFNMG - Campus Montes Claros</p>
                 <p>Desenvolvimento WEB</p>
-                <p>&copy;2023 - <a href="#">Equipe 4</a></p>
+                <p>&copy;2023 - <a href="../../pages/about.html">Equipe 4</a></p>
             </div>
         </footer>
     </div>

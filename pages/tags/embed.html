@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag p</title>
+    <title>Tag canvas</title>
 
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="../../styles/tags.css">
@@ -37,7 +37,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="../atributes.html">
+                                    <a href="../atributes">
                                         <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
                                     </a>
                                 </li>
@@ -59,7 +59,7 @@
                     <p id="back">
                         <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Voltar</span></a>
                     </p>
-                    <h1 class="green-background" >Tag &lt;p&gt;</h1>
+                    <h1 class="green-background" >Tag &lt;embed&gt;</h1>
                     <p id="nextPrevious">
                         <a href="./button.html" id="previous">Anterior</a>
                         <span>|</span>
@@ -71,18 +71,16 @@
                         Definições e uso
                     </h2>
                     <p>
-                        A tag &lt;p&gt; define um parágrafo.<br><br>
-                        Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada elemento &lt;p&gt;.
+                        A tag &lt;embed&gt; define um contêiner para um recurso externo, como uma página web, uma imagem, um reprodutor de mídia ou um aplicativo de plug-in. 
                     </p>
                 </div>
                 <div class="exemplos">
                     <h2 class="green-background">
                         Exemplos
                     </h2>
-                    
                     <div class="codigo">
                         <pre><code>
-&lt;p&gt;Isso é um texto dentro de um paragrafo.&lt;/p&gt;
+&lt;embed type="text/html" src="snippet.html" width="500" height="200"&gt;
                         </code></pre>
                     </div>
                     <button id="open-modal" onclick="openExample()">Testar exemplo</button>
@@ -96,16 +94,19 @@
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-&lt;h1&gt;Tag p&lt;/h1&gt;
-&lt;p&gt;Isso é um texto dentro de um paragrafo.&lt;/p&gt;
+
+&lt;h1&gt;Tag embed&lt;/h1&gt;
+
+&lt;embed type="text/html" src="snippet.html" width="500" height="200"&gt;
+
 &lt;/body&gt;
 &lt;/html&gt;
                             </code></pre>
                         </div>
                         <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
                         <div class="right-side modal-div">
-                            <h1>Tag p</h1>
-                            <p>Isso é um texto dentro de um paragrafo.</p>
+                            <h1>Tag embed</h1>
+                            <embed type="text/html" src="snippet.html" width="500" height="200">                        
                         </div>
                     </dialog>
                 </div>
@@ -113,6 +114,37 @@
                     <h2 class="green-background">
                         Atributos
                     </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="td-atributos">Atributo</th>
+                                <th class="td-valor">Valor</th>
+                                <th class="td-descricao">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-atributos"><span>Height</span></td>
+                                <td class="td-valor">Pixels</td>
+                                <td class="td-descricao">Especifica a altura do conteúdo embutido</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">Src</td>
+                                <td class="td-valor">URL</td>
+                                <td class="td-descricao">Especifica o endereço do arquivo externo para embutido</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>Type</span></td>
+                                <td class="td-valor">Type</td>
+                                <td class="td-descricao"> Especifica o tipo de mídia do conteúdo embutido</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>Width</span></td>
+                                <td class="td-valor">Pixels</td>
+                                <td class="td-descricao">Especifica a largura do conteúdo embutido</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <p>Esta tag também suporta <a href="../atributes.html">Atributos Globais.</a></p>
                 </div>
             </section>

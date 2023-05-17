@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag iframe</title>
+    <title>Tag img</title>
 
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="../../styles/tags.css">
@@ -59,7 +59,7 @@
                     <p id="back">
                         <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Voltar</span></a>
                     </p>
-                    <h1 class="green-background" >Tag &lt;iframe&gt;</h1>
+                    <h1 class="green-background" >Tag &lt;img&gt;</h1>
                     <p id="nextPrevious">
                         <a href="./button.html" id="previous">Anterior</a>
                         <span>|</span>
@@ -71,11 +71,14 @@
                         Definições e uso
                     </h2>
                     <p>
-                        A tag &lt;iframe&gt; especifica um frame em linha.<br><br>
-                        Um frame em linha é usado para embutir outro documento ao documento HTML atual.<br><br>
-                        Dica: Use CSS para estilizar a tag &lt;iframe&gt;.<br><br>
-                        Dica: É uma boa prática incluir um atributo de título para a tag &lt;iframe&gt;. Isso é usado por
-                        leitores de tela para ler o que o conteúdo do &lt;iframe&gt; é.
+                        A tag &lt;img&gt; é usada para incorporar uma imagem em uma página HTML. <br><br>
+                        As imagens não são tecnicamente inseridas em uma página da web; as imagens são vinculadas às páginas da web. A tag &lt;img&gt; cria um espaço reservado para a imagem referenciada. <br><br>
+                        A tag &lt;img&gt; tem dois atributos obrigatórios: <br><br>
+                        src - Especifica o caminho para a imagem<br>
+                        alt - Especifica um texto alternativo para a imagem, caso a imagem, por algum motivo, não possa ser exibida. <br><br>
+                        Nota: sempre especifique a largura e a altura de uma imagem. Se a largura e a altura não forem especificadas, a página poderá piscar enquanto a imagem é carregada. <br><br>
+                        Dica: para vincular uma imagem a outro documento, basta aninhar a tag &lt;img&gt; dentro da tag &lt;a&gt; (veja o exemplo abaixo).
+
                     </p>
                 </div>
                 <div class="exemplos">
@@ -84,8 +87,7 @@
                     </h2>
                     <div class="codigo">
                         <pre><code>
-&lt;iframe src="https://www.ifnmg.edu.br" title="Site do Ifnmg"&gt;
-&lt;/iframe&gt;                            
+&lt;img src="img_girl.jpg" alt="Garota com uma jaqueta" width="500" height="600"&gt;
                         </code></pre>
                     </div>
                     <button id="open-modal" onclick="openExample()">Testar exemplo</button>
@@ -100,10 +102,9 @@
 &lt;html&gt;
 &lt;body&gt;
 
-&lt;h1&gt;Tag iframe&lt;/h1&gt;
+&lt;h1&gt;Tag img&lt;/h1&gt;
 
-&lt;iframe src="https://www.ifnmg.edu.br" title="Site do Ifnmg"&gt;
-&lt;/iframe&gt;
+&lt;img src="img_girl.jpg" alt="Garota com uma jaqueta" width="500" height="600"&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;
@@ -111,9 +112,8 @@
                         </div>
                         <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
                         <div class="right-side modal-div">
-                            <h1>Tag iframe</h1>
-                            <iframe src="https://www.ifnmg.edu.br" title="Site do Ifnmg">
-                            </iframe>
+                            <h1>Tag img</h1>
+                            <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
                         </div>
                     </dialog>
                 </div>
@@ -131,67 +131,65 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="td-atributos"><span>allow</span></td>
-                                <td class="td-valor">nenhum</td>
-                                <td class="td-descricao">Especifica uma política de recursos para o elemento &lt;iframe&gt;</td>
+                                <td class="td-atributos"><span>Alt</span></td>
+                                <td class="td-valor">Texts</td>
+                                <td class="td-descricao">Especifica um texto alternativo para uma imagem</td>
                             </tr>
                             <tr>
-                                <td class="td-atributos">allowfullscreen</td>
-                                <td class="td-valor">true/false</td>
-                                <td class="td-descricao">Definir como verdadeiro se o elemento &lt;iframe&gt; puder ativar o modo de tela
-                                    cheia ao chamar o método requestFullscreen().</td>
+                                <td class="td-atributos">Crossorigin</td>
+                                <td class="td-valor">Anonymous<br>Use-credentials
+                                    </td>
+                                <td class="td-descricao"> Permite que imagens de sites de terceiros que permitem acesso de origem cruzada sejam usadas com o canvas</td>
                             </tr>
                             <tr>
-                                <td class="td-atributos">allowpaymentrequest</td>
-                                <td class="td-valor">true/false</td>
-                                <td class="td-descricao">Definir como verdadeiro se um &lt;iframe&gt; de origem cruzada deve ser permitido
-                                    a invocar a API de Pedido de Pagamento (Payment Request API)</td>
-                            </tr>
-                            <tr>
-                                <td class="td-atributos">height</td>
-                                <td class="td-valor">pixels</td>
-                                <td class="td-descricao">Especifica a altura de um &lt;iframe&gt;. Altura padrão é de 150 pixels</td>
-                            </tr>
-                            <tr>
-                                <td class="td-atributos">loading</td>
-                                <td class="td-valor">eager/lazy</td>
-                                <td class="td-descricao">Especifica se um navegador deve carregar um &lt;iframe&gt; imediatamente ou
-                                    adiar o carregamento dos iframes até que algumas condições sejam atendidas.</td>
-                            </tr>
-                            <tr>
-                                <td class="td-atributos">name</td>
-                                <td class="td-valor">text</td>
-                                <td class="td-descricao">Especifica o nome de um &lt;iframe&gt;</td>
-                            </tr>
-                            <tr>
-                                <td class="td-atributos">referrerpolicy</td>
-                                <td class="td-valor">no-referrer, no-referrer-when-downgrade, origin,
-                                    origin-when-cross-origin, same-origin,
-                                    strict-origin-when-cross-origin
-                                    unsafe-url</td>
-                                <td class="td-descricao">Especifica qual informação de referência (referrer) deve ser enviada ao buscar o
-                                    &lt;iframe&gt;</td>
-                            </tr>
-                            <tr>
-                                <td class="td-atributos">sandbox</td>
-                                <td class="td-valor">allow-forms, allow-pointer-lock, allow-popups, allow-same-origin, allow-scripts,
-                                    allow-top-navigation</td>
-                                <td class="td-descricao">Ativa um conjunto adicional de restrições para o conteúdo em um &lt;iframe&gt;.</td>
-                            </tr>
-                            <tr>
-                                <td class="td-atributos">URL</td>
-                                <td class="td-valor">src</td>
-                                <td class="td-descricao">Especifica o endereço do documento a ser embutido no elemento &lt;iframe&gt;</td>
-                            </tr>
-                            <tr>
-                                <td class="td-atributos">srcdoc</td>
-                                <td class="td-valor">HTML_code</td>
-                                <td class="td-descricao">Especifica o conteúdo HTML da página a ser exibido no elemento &lt;iframe&gt;</td>
-                            </tr>
-                            <tr>
-                                <td class="td-atributos">Width</td>
+                                <td class="td-atributos"><span>Height</span></td>
                                 <td class="td-valor">Pixels</td>
-                                <td class="td-descricao">Especifica a largura de um elemento &lt;iframe&gt;. Valor padrão é 300 pixels.</td>
+                                <td class="td-descricao"> Especifica a altura de uma imagem</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>Ismap</span></td>
+                                <td class="td-valor">Ismap</td>
+                                <td class="td-descricao">Especifica uma imagem como um mapa de imagem no lado do servidor (server-side image map)</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>Loading</span></td>
+                                <td class="td-valor">Eager&frasl;Lazy</td>
+                                <td class="td-descricao">Especifica se o navegador deve carregar uma imagem imediatamente ou adiar o carregamento de imagens até que algumas condições sejam atendidas</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>Longdesc</span></td>
+                                <td class="td-valor">URL</td>
+                                <td class="td-descricao">Especifica uma URL para uma descrição detalhada de uma imagem</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>Referrerpolicy</span></td>
+                                <td class="td-valor">no-referrer<br>no-referrer-when-downgrade<br>origin<br>origin-when-cross-origin<br>unsafe-url</td>
+                                <td class="td-descricao">Especifica qual informação do referenciador usar ao buscar uma imagem</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>Sizes</span></td>
+                                <td class="td-valor">Sizes</td>
+                                <td class="td-descricao">Especifica os tamanhos de imagem para diferentes layouts de página</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>Scr</span></td>
+                                <td class="td-valor">URL</td>
+                                <td class="td-descricao">Especifica o caminho para a imagem</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>Scrset</span></td>
+                                <td class="td-valor">URL-List</td>
+                                <td class="td-descricao">Especifica uma lista de arquivos de imagem para usar em diferentes situações</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>Usermap</span></td>
+                                <td class="td-valor">#mapname</td>
+                                <td class="td-descricao">Especifica uma imagem como um mapa de imagem do lado do cliente</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos"><span>Width</span></td>
+                                <td class="td-valor">Pixels</td>
+                                <td class="td-descricao">Especifica a largura de uma imagem</td>
                             </tr>
                         </tbody>
                     </table>
