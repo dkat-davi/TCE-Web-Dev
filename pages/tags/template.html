@@ -54,35 +54,38 @@
                 </p>
         </header>
         <main>
-            <div id="previousTag" onclick="changeTagPage('canvas')">
-                <i class="fa-solid fa-angle-left" id="references-menu-icon"></i>
-            </div>
             <section class="wrapper">
                 <div id="title">
+                    <p id="back">
+                        <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Tags</span></a>
+                    </p>
                     <h1 class="green-background" >Tag &lt;template&gt;</h1>
+                    <p id="nextPrevious">
+                        <a href="./table.html" id="previous">Anterior</a>
+                        <span>|</span>
+                        <a href="./time.html" id="next">Próximo</a>
+                    </p>
                 </div>
                 <div class="definicoes">
                     <h2 class="green-background">
                         Definições e uso
                     </h2>
                     <p>
-                        A tag &lt;template&gt; é usada como um container para armazenar algum conteúdo HTML
-                            escondido do usuário assim que a página carregar <br> <br>
-                            
-                            O conteúdo dentro de um &lt;template&gt; pode ser renderizado mais tarde com um JavaScript <br><br>
+                      A tag &lt;template&gt; é usada como um container para armazenar algum conteúdo HTML
+                          escondido do usuário assim que a página carregar <br> <br>
+                          
+                          O conteúdo dentro de um &lt;template&gt; pode ser renderizado mais tarde com um JavaScript <br><br>
 
-                            Você pode usar a tag &lt;template&gt; se tiver algum código HTML que você queira usar várias
-                            vezes, mas não até você ativamente pedir-lo. Para fazer isso sem a tag &lt;template&gt;, você
-                            deverá criar um código HTML com JavaScript para prevenir o navegador de renderizar o
-                            código
-                    </p>
+                          Você pode usar a tag &lt;template&gt; se tiver algum código HTML que você queira usar várias
+                          vezes, mas não até você ativamente pedi-lo. Para fazer isso sem a tag &lt;template&gt;, você deverá criar um código HTML com JavaScript para prevenir o navegador de renderizar o código.
+                  </p>
                 </div>
                 <div class="exemplos">
                     <h2 class="green-background">
                         Exemplos
                     </h2>
                     <div class="codigo">
-                        <pre><code>
+                      <pre><code>
 &lt;button onclick="showContent()"&gt;Show hidden content&lt;/button&gt;
 
 &lt;template&gt;
@@ -97,16 +100,19 @@ function showContent() {
   document.body.appendChild(clon);
 }
 &lt;/script&gt;
-                        </code></pre>
-                    </div>
-                    <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_template" target="_blank">
-                        <button id="open-modal">Testar exemplo</button>
-                    </a>
+                      </code></pre>
+                  </div>
+                  <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_template" target="_blank">
+                    <button id="open-modal">Testar exemplo</button>
+                </a>
+                </div>
+                <div class="atributos">
+                    <h2 class="green-background">
+                        Atributos
+                    </h2>
+                    <p>Esta tag suporta apenas <a href="../atributes.html">Atributos Globais.</a></p>
                 </div>
             </section>
-            <div id="nextTag" onclick="changeTagPage('small')">
-                <i class="fa-solid fa-angle-right" id="references-menu-icon"></i>
-            </div>
         </main>
         <footer>
             <ul>
@@ -138,7 +144,7 @@ function showContent() {
             <div id="footer-description">
                 <p>IFNMG - Campus Montes Claros</p>
                 <p>Desenvolvimento WEB</p>
-                <p>&copy;2023 - <a href="#">Equipe 4</a></p>
+                <p>&copy;2023 - <a href="../../pages/about.html">Equipe 4</a></p>
             </div>
         </footer>
     </div>

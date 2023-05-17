@@ -249,14 +249,28 @@ code {
     vertical-align: top;
 }
 
+td.td-atributos {
+    text-align: left;
+}
+
 .td-valor {
     width: 30%;
     text-align: center;
     vertical-align: top;
 }
 
+td.td-valor {
+    text-align: left;
+}
+
 .td-descricao {
     width: 50%;
+    text-align: center;
+}
+
+td.td-descricao {
+    text-align: left;
+    vertical-align: top;
 }
 
 @media screen and (min-width: 768px) {
