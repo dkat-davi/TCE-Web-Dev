@@ -38,6 +38,11 @@ section{
     border-radius: 3rem;
 }
 
+#first-page a:hover{
+    color: var(--primary-color);
+    background: white;
+}
+
 .container{
     position: relative;
     padding-bottom: 70rem;
