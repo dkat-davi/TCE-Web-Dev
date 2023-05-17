@@ -15,14 +15,14 @@
 </div>
 
 
-<h2 id="desciption">&#X1F4DD Descrição do projeto</h2>
+<h2 id="description">&#X1F4DD Descrição do projeto</h2>
 
 <p>O Projeto WebDev tem como oportunidade a revisão de conhecimentos para aprovação na disciplina
 Desenvolvimento Web, bem como pode compor portfólio de desenvolvedor.<p>
   
 <p>Usando como base as referencias de tags do <a href="https://www.w3schools.com/tags/default.asp" target="_blank">W3Shools</a> nós produzimos um site no qual fizemos a descrição e exemplos referentes as tags HTML demandadas pelo professor da disciplina de Desenvolvimento Web.<p>
 
-<h2 id="funcitionalities">&#X1F528 Funcionalidades do projeto</h2>
+<h2 id="functionalities">&#X1F528 Funcionalidades do projeto</h2>
 
 <ul>
     <li>Todo o designer do projeto foi feito pela nossa equipe de designer.</li>
