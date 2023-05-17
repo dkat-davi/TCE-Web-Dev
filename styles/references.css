@@ -97,7 +97,7 @@ div.navegation-links-right-div {
 }
 
 .table-items {
-    width: 90%;
+    width: 80%;
     margin: 3rem auto;
 }
 
@@ -181,6 +181,10 @@ div.navegation-links-right-div {
     
     .navegation-links {
         margin-top: 0rem;
+    }
+    
+    .table-items {
+        width: 70%;
     }
 
     .table-item-header p:first-child {
