@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag area</title>
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/tags.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../styles/area.css">
+
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+                <h1><a href="../../index.html">Projeto WEB</a></h1>
+        
+                <nav>
+                    <ul>
+        
+                        <li onclick="handleDropdonwMenuReferencesClick()">
+                            <span>Referências</span> <i class="fa-solid fa-angle-down" id="references-menu-icon">
+                        </i>
+                        </li>
+                        <li id="references">
+                            <ul>
+                                <li>
+                                    <a href="../references.html">
+                                        <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../browsers">
+                                        <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../atributes.html">
+                                        <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../about.html">Sobre nós</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>
+                    <i class="fa-solid fa-bars" id="menu-icon"
+                    onclick="handleDropdonwMenuClick('header nav', '#menu-icon')"></i>
+                </p>
+        </header>
+        <main>
+            <section class="wrapper">
+                <div id="title">
+                    <p id="back">
+                        <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Voltar</span></a>
+                    </p>
+                    <h1 class="green-background" >Tag &lt;area&gt;</h1>
+                    <p id="nextPrevious">
+                        <a href="./img.html" id="previous">Anterior</a>
+                        <span>|</span>
+                        <a href="./meta.html" id="next">Próximo</a>
+                    </p>
+                </div>
+                <div class="definicoes">
+                    <h2 class="green-background">
+                        Definições e uso
+                    </h2>
+                    <p>
+                        A tag &lt;area&gt; define uma área dentro de um mapa de imagem (um mapa de imagem é uma imagem com áreas clicáveis). define uma relação entre o documento atual e um recurso externo. <br><br>
+                        Os elementos &lt;area&gt; estão sempre aninhados dentro de uma tag &lt;map&gt;. <br><br>
+                        Observação: o atributo usemap em &lt;img&gt; está associado ao atributo name do elemento &lt;map&gt; e cria um relacionamento entre a imagem e o mapa. 
+                    </p>
+                </div>
+                <div class="exemplos">
+                    <h2 class="green-background">
+                        Exemplos
+                    </h2>
+                    <div class="codigo">
+                        <pre><code>
+&lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt;
+
+&lt;map name="workmap"&gt;
+&lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt;
+&lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt;
+&lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm"&gt;
+&lt;/map&gt;
+                        </code></pre>
+                    </div>
+                    <button id="open-modal"> <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_areamap" target="_blank">Testar exemplo </a></button>
+                </div>
+                <div class="atributos">
+                    <h2 class="green-background">
+                        Atributos
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="td-atributos">Atributo</th>
+                                <th class="td-valor">Valor</th>
+                                <th class="td-descricao">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-atributos">alt</td>
+                                <td class="td-valor">text</td>
+                                <td class="td-descricao">Especifica um texto alternativo para a área. Obrigatório se o atributo href estiver presente.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">coords</td>
+                                <td class="td-valor">coordinates</td>
+                                <td class="td-descricao">Especifica as coordenadas da área.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">download</td>
+                                <td class="td-valor">filename</td>
+                                <td class="td-descricao">Especifica que o destino será baixado quando um usuário clicar no hiperlink.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">href</td>
+                                <td class="td-valor">URL</td>
+                                <td class="td-descricao">Especifica o destino do hiperlink para a área.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">hreflang</td>
+                                <td class="td-valor">language_code</td>
+                                <td class="td-descricao">Especifica o idioma do URL de destino.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">media</td>
+                                <td class="td-valor">media query</td>
+                                <td class="td-descricao">Especifica para qual mídia/dispositivo o URL de destino é otimizado.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">referrerpolicy</td>
+                                <td class="td-valor">no-referrer <br>
+                                    no-referrer-when-downgrade <br>
+                                    origin <br>
+                                    origin-when-cross-origin <br>
+                                    same-origin <br>
+                                    strict-origin-when-cross-origin <br>
+                                    unsafe-url</td>
+                                <td class="td-descricao">Especifica quais informações do referenciador enviar com o link.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">rel</td>
+                                <td class="td-valor">alternate <br>
+                                    author <br>
+                                    bookmark <br>
+                                    help <br>
+                                    license <br>
+                                    next <br>
+                                    nofollow <br>
+                                    noreferrer <br>
+                                    prefetch <br>
+                                    prev <br>
+                                    search
+                                    tag</td>
+                                <td class="td-descricao">Define uma folha de estilo preferida ou alternatiEspecifica a relação entre o documento atual e o URL de destino.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">shape/td>
+                                <td class="td-valor">default <br>
+                                    rect <br>
+                                    circle <br>
+                                    poly</td>
+                                <td class="td-descricao">Especifica a forma da área.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">target/td>
+                                <td class="td-valor">_blank <br>
+                                    _parent <br>
+                                    _self <br>
+                                    _top <br>
+                                    framename</td>
+                                <td class="td-descricao">Especifica a forma da área.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">type/td>
+                                <td class="td-valor">media_type</td>
+                                <td class="td-descricao">Especifica o tipo de mídia do URL de destino.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Esta tag também suporta <a href="../atributes.html">Atributos Globais.</a></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="../references.html">
+                        <span class="footer-icons"><i class="fa-solid fa-code"></i></span>
+                        <span class="footer-links">Tags HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../browsers">
+                        <span class="footer-icons"><i class="fa-brands fa-chrome"></i>
+                        </span><span class="footer-links">Suporte dos navegadores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../atributes">
+                        <span class="footer-icons"><i class="fa-solid fa-earth-americas"></i></span>
+                        <span class="footer-links">Atributos globais</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">
+                        <span class="footer-icons"><i class="fa-solid fa-user-group footer-icons"></i></span>
+                        <span class="footer-links">Sobre Nós</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="footer-description">
+                <p>IFNMG - Campus Montes Claros</p>
+                <p>Desenvolvimento WEB</p>
+                <p>&copy;2023 - <a href="#">Equipe 4</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
