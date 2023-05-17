@@ -75,3 +75,16 @@ td{
         height: auto;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .main-title h1{
+        font-size: 1.2rem;
+        word-break: break-all;
+    }
+    .table-tags{
+        overflow-x: auto;
+    }
+    .navegation-links{
+        font-size: .8rem;
+    }
+}
