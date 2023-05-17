@@ -136,14 +136,16 @@ section.about-us{
 .text-about h3, .text-about h2{
     color: #798D83;
     font-family: 'Poppins', sans-serif;
-    font-size: 6rem;
+    /* font-size: 6rem; */
+    font-size: 5rem;
     text-align: center;
     margin: 0 0;
 }
 
 .text-about h2{
     color: #B7C6BE;
-    font-size: 6rem;
+    /* font-size: 6rem; */
+    font-size: 5rem;
 }
 
 .img-people{
@@ -162,6 +164,11 @@ section.about-us{
 
 .img-people .about-img-02{
     border: .9rem solid #3E606F;
+    opacity: 0.8;
+}
+
+.img-people .about-img-03{
+    opacity: 0.4;
 }
 
 .img-people .arrow{
@@ -193,7 +200,7 @@ main .scroll-right-button i{
     list-style: none;
     display: block;
     background-color: var(--terciary-color);
-    padding: 1.5rem;
+    padding: 1.2rem;
     border-radius: 50%;
     text-decoration: none;
     color: var(--primary-color);
@@ -272,16 +279,20 @@ main .scroll-right-button i:hover, main .scroll-left-button i:hover{
         order: 1;
     }
 
+    .text-about{
+        margin-right: 3rem;
+    }
+
     .content{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         margin: auto;
     }
 
     .img-people img{
-        width: 18rem;
+        width: 15rem;
         border-radius: 50%;
         border: .9rem solid #91AA9D;
     }
