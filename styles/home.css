@@ -309,3 +309,63 @@ main .scroll-right-button i:hover, main .scroll-left-button i:hover{
         width: 45rem;
     }
 }
+
+@media  screen and (max-width: 400px) {
+    #first-page h1{
+        font-size: 4.5rem;
+        line-height: 7rem;
+    }
+    #first-page p{
+        font-size: 1.3rem;
+    }
+    #first-page a{
+        font-size: 1.5rem;
+    }
+    #first-page{
+        margin: 10rem auto 0 auto;
+        width: 70%;
+    }
+    .items-tech img{
+        width: 10rem;
+        height: 7rem;
+    }
+    .items-tech .text-01 .title-tech h3, .text-02 .title-tech h3{
+        font-size: 1.8rem;
+    }
+    .text-01 p, .text-02 p{
+        font-size: 1.3rem;
+    }
+    .text-about h3{
+        font-size: 3rem;
+    }
+    .text-about h2{
+        font-size: 3rem;
+    }
+    .text-about{
+        line-height: 3.5rem;
+    }
+    .img-people img{
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: 0;
+    }
+    .content{
+        margin-bottom: 0;
+        margin-top: 4rem;
+    }
+    .img-people{
+        margin-bottom: 0;
+    }
+    main .scroll-right-button i{
+        margin-left: -2.5rem;
+        z-index: 1;
+        font-size: 3rem;
+        list-style: none;
+        display: block;
+        background-color: var(--terciary-color);
+        padding: 1.2rem;
+        border-radius: 50%;
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+}
