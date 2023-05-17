@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag iframe</title>
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/tags.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+                <h1><a href="../../index.html">Projeto WEB</a></h1>
+        
+                <nav>
+                    <ul>
+        
+                        <li onclick="handleDropdonwMenuReferencesClick()">
+                            <span>Referências</span> <i class="fa-solid fa-angle-down" id="references-menu-icon">
+                        </i>
+                        </li>
+                        <li id="references">
+                            <ul>
+                                <li>
+                                    <a href="../references.html">
+                                        <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../browsers">
+                                        <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../atributes">
+                                        <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../about.html">Sobre nós</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>
+                    <i class="fa-solid fa-bars" id="menu-icon"
+                    onclick="handleDropdonwMenuClick('header nav', '#menu-icon')"></i>
+                </p>
+        </header>
+        <main>
+            <section class="wrapper">
+                <div id="title">
+                    <p id="back">
+                        <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Voltar</span></a>
+                    </p>
+                    <h1 class="green-background" >Tag &lt;iframe&gt;</h1>
+                    <p id="nextPrevious">
+                        <a href="./button.html" id="previous">Anterior</a>
+                        <span>|</span>
+                        <a href="./code.html" id="next">Próximo</a>
+                    </p>
+                </div>
+                <div class="definicoes">
+                    <h2 class="green-background">
+                        Definições e uso
+                    </h2>
+                    <p>
+                        A tag &lt;iframe&gt; especifica um frame em linha.<br><br>
+                        Um frame em linha é usado para embutir outro documento ao documento HTML atual.<br><br>
+                        Dica: Use CSS para estilizar a tag &lt;iframe&gt;.<br><br>
+                        Dica: É uma boa prática incluir um atributo de título para a tag &lt;iframe&gt;. Isso é usado por
+                        leitores de tela para ler o que o conteúdo do &lt;iframe&gt; é.
+                    </p>
+                </div>
+                <div class="exemplos">
+                    <h2 class="green-background">
+                        Exemplos
+                    </h2>
+                    <div class="codigo">
+                        <pre><code>
+&lt;iframe src="https://www.ifnmg.edu.br" title="Site do Ifnmg"&gt;
+&lt;/iframe&gt;                            
+                        </code></pre>
+                    </div>
+                    <button id="open-modal" onclick="openExample()">Testar exemplo</button>
+                    <dialog id="modal">
+                        <div id="close-modal">
+                            <h2 class="green-background" >Exemplo</h2>
+                            <i class="fa-solid fa-xmark" onclick="closeExample()"></i>
+                        </div>
+                        <div class="left-side modal-div">
+                            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Tag iframe&lt;/h1&gt;
+
+&lt;iframe src="https://www.ifnmg.edu.br" title="Site do Ifnmg"&gt;
+&lt;/iframe&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                        </div>
+                        <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
+                        <div class="right-side modal-div">
+                            <h1>Tag iframe</h1>
+                            <iframe src="https://www.ifnmg.edu.br" title="Site do Ifnmg">
+                            </iframe>
+                        </div>
+                    </dialog>
+                </div>
+                <div class="atributos">
+                    <h2 class="green-background">
+                        Atributos
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="td-atributos">Atributo</th>
+                                <th class="td-valor">Valor</th>
+                                <th class="td-descricao">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-atributos"><span>allow</span></td>
+                                <td class="td-valor">nenhum</td>
+                                <td class="td-descricao">Especifica uma política de recursos para o elemento &lt;iframe&gt;</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">allowfullscreen</td>
+                                <td class="td-valor">true/false</td>
+                                <td class="td-descricao">Definir como verdadeiro se o elemento &lt;iframe&gt; puder ativar o modo de tela
+                                    cheia ao chamar o método requestFullscreen().</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">allowpaymentrequest</td>
+                                <td class="td-valor">true/false</td>
+                                <td class="td-descricao">Definir como verdadeiro se um &lt;iframe&gt; de origem cruzada deve ser permitido
+                                    a invocar a API de Pedido de Pagamento (Payment Request API)</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">height</td>
+                                <td class="td-valor">pixels</td>
+                                <td class="td-descricao">Especifica a altura de um &lt;iframe&gt;. Altura padrão é de 150 pixels</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">loading</td>
+                                <td class="td-valor">eager/lazy</td>
+                                <td class="td-descricao">Especifica se um navegador deve carregar um &lt;iframe&gt; imediatamente ou
+                                    adiar o carregamento dos iframes até que algumas condições sejam atendidas.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">name</td>
+                                <td class="td-valor">text</td>
+                                <td class="td-descricao">Especifica o nome de um &lt;iframe&gt;</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">referrerpolicy</td>
+                                <td class="td-valor">no-referrer, no-referrer-when-downgrade, origin,
+                                    origin-when-cross-origin, same-origin,
+                                    strict-origin-when-cross-origin
+                                    unsafe-url</td>
+                                <td class="td-descricao">Especifica qual informação de referência (referrer) deve ser enviada ao buscar o
+                                    &lt;iframe&gt;</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">sandbox</td>
+                                <td class="td-valor">allow-forms, allow-pointer-lock, allow-popups, allow-same-origin, allow-scripts,
+                                    allow-top-navigation</td>
+                                <td class="td-descricao">Ativa um conjunto adicional de restrições para o conteúdo em um &lt;iframe&gt;.</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">URL</td>
+                                <td class="td-valor">src</td>
+                                <td class="td-descricao">Especifica o endereço do documento a ser embutido no elemento &lt;iframe&gt;</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">srcdoc</td>
+                                <td class="td-valor">HTML_code</td>
+                                <td class="td-descricao">Especifica o conteúdo HTML da página a ser exibido no elemento &lt;iframe&gt;</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">Width</td>
+                                <td class="td-valor">Pixels</td>
+                                <td class="td-descricao">Especifica a largura de um elemento &lt;iframe&gt;. Valor padrão é 300 pixels.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Esta tag também suporta <a href="../atributes.html">Atributos Globais.</a></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="../references.html">
+                        <span class="footer-icons"><i class="fa-solid fa-code"></i></span>
+                        <span class="footer-links">Tags HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../browsers">
+                        <span class="footer-icons"><i class="fa-brands fa-chrome"></i>
+                        </span><span class="footer-links">Suporte dos navegadores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../atributes">
+                        <span class="footer-icons"><i class="fa-solid fa-earth-americas"></i></span>
+                        <span class="footer-links">Atributos globais</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">
+                        <span class="footer-icons"><i class="fa-solid fa-user-group footer-icons"></i></span>
+                        <span class="footer-links">Sobre Nós</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="footer-description">
+                <p>IFNMG - Campus Montes Claros</p>
+                <p>Desenvolvimento WEB</p>
+                <p>&copy;2023 - <a href="#">Equipe 4</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
