@@ -1,9 +1,10 @@
 <h1 align="center">&lt;Projeto WebDev /&gt;</h1>
 <p align="center">
-  <a href="#-tecnologias">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Acesso</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#description">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#functionalities">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#access">Acesso</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologies">Tenologias</a>
 </p>
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=Projeto WebDev&color=3E606F&labelColor=000000">
@@ -14,14 +15,14 @@
 </div>
 
 
-<h2>&#X1F4DD Descrição do projeto</h2>
+<h2 id="desciption">&#X1F4DD Descrição do projeto</h2>
 
 <p>O Projeto WebDev tem como oportunidade a revisão de conhecimentos para aprovação na disciplina
 Desenvolvimento Web, bem como pode compor portfólio de desenvolvedor.<p>
   
 <p>Usando como base as referencias de tags do <a href="https://www.w3schools.com/tags/default.asp" target="_blank">W3Shools</a> nós produzimos um site no qual fizemos a descrição e exemplos referentes as tags HTML demandadas pelo professor da disciplina de Desenvolvimento Web.<p>
 
-<h2>&#X1F528 Funcionalidades do projeto</h2>
+<h2 id="funcitionalities">&#X1F528 Funcionalidades do projeto</h2>
 
 <ul>
     <li>Todo o designer do projeto foi feito pela nossa equipe de designer.</li>
@@ -41,12 +42,12 @@ Desenvolvimento Web, bem como pode compor portfólio de desenvolvedor.<p>
     <img src="assets/gif-tela-projeto.gif">
 </div>
 
-<h2>&#X1F4C1 Acesso ao projeto</h2>
+<h2 id="access">&#X1F4C1 Acesso ao projeto</h2>
 
 <p>O Projeto WebDev está hospedado via GitHub Pages no link <a href="https://dkat-davi.github.io/TCE-Web-Dev/" target="_blank">https://dkat-davi.github.io/TCE-Web-Dev/</a><p>
 
 
-<h2>&#X2714 Técnicas e Tecnologias utilizadas</h2>
+<h2 id="tecnologies">&#X2714 Técnicas e Tecnologias utilizadas</h2>
 <ul>
     <li>
         <img align="center" alt="HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>HTML5
