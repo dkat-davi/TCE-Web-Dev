@@ -28,6 +28,7 @@ section{
     margin-top: .5rem;
     margin-bottom: 2rem;
     font-size: 2rem;
+    width: 30rem;
 }
 
 #first-page a{
@@ -230,6 +231,10 @@ main .scroll-right-button i:hover, main .scroll-left-button i:hover{
         margin-left: 8rem;
     }
 
+    #first-page p{
+        width: 50rem;
+    }
+
     section.technologies{
         flex-wrap: wrap;
         flex-direction: row;
@@ -317,6 +322,7 @@ main .scroll-right-button i:hover, main .scroll-left-button i:hover{
     }
     #first-page p{
         font-size: 1.3rem;
+        width: 100%;
     }
     #first-page a{
         font-size: 1.5rem;
