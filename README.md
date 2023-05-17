@@ -1,5 +1,13 @@
 <h1 align="center">&lt;Projeto WebDev /&gt;</h1>
-
+<p align="center">
+  <a href="#-tecnologias">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Acesso</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=Projeto WebDev&color=3E606F&labelColor=000000">
+</p>
 <br>
 <div align="center">
     <img max-height="400em" src="assets/capa-projeto-cep.png" alt="diagrama-uml">
