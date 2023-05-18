@@ -56,10 +56,22 @@ header h1 {
     transform: translateY(-.4rem);
 }
 
-header h1 a{
-    color: var(--color-white);
+.header-title {
     font-weight: normal;
-    font-size: 2rem;
+    margin: .5rem 0;
+}
+
+.header-title h1 {
+    font-weight: normal;
+    font-size: 2.5rem;
+    transform: translateY(.2rem);
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-white);
     text-decoration: none;
     cursor: pointer;
 }
