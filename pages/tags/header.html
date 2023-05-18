@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag header</title>
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/tags.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+                <h1><a href="../../index.html">Projeto WEB</a></h1>
+        
+                <nav>
+                    <ul>
+        
+                        <li onclick="handleDropdonwMenuReferencesClick()">
+                            <span>Referências</span> <i class="fa-solid fa-angle-down" id="references-menu-icon">
+                        </i>
+                        </li>
+                        <li id="references">
+                            <ul>
+                                <li>
+                                    <a href="../references.html">
+                                        <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../browsers">
+                                        <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../atributes">
+                                        <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../about.html">Sobre nós</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>
+                    <i class="fa-solid fa-bars" id="menu-icon"
+                    onclick="handleDropdonwMenuClick('header nav', '#menu-icon')"></i>
+                </p>
+        </header>
+        <main>
+            <section class="wrapper">
+                <div id="title">
+                    <p id="back">
+                        <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Voltar</span></a>
+                    </p>
+                    <h1 class="green-background" >Tag &lt;header&gt;</h1>
+                    <p id="nextPrevious">
+                        <a href="./embed.html" id="previous">Anterior</a>
+                        <span>|</span>
+                        <a href="./h1-to-h6.html" id="next">Próximo</a>
+                    </p>
+                </div>
+                <div class="definicoes">
+                    <h2 class="green-background">
+                        Definições e uso
+                    </h2>
+                    <p>
+O elemento &lt;header&gt; representa um container para conteúdo introdutório ou um set de links navegacionais 
+<br><br>
+Um elemento &lt;header&gt; tipicamente contém
+<ul style="padding-left: 2rem;">
+    <li>Um ou mais elementos de cabeçalho (&lt;h1&gt;-&lt;h6&gt;)</li>
+    <li>Logo ou ícone</li>
+    <li>Informações autorais</li>
+</ul>    
+<br>
+Nota: Você pode ter diversos &lt;header&gt; elementos em um documento HTML. Porém, &lt;header&gt; 
+não pode ser aplicado dentro de um &lt;footer&gt;, &lt;address&gt; ou outro elemento &lt;header&gt;
+                    </p>
+                </div>
+                <div class="exemplos">
+                    <h2 class="green-background">
+                        Exemplos
+                    </h2>
+                    <div class="codigo">
+                        <pre><code>
+&lt;article&gt;
+    &lt;header&gt;
+        &lt;h1&gt;A heading here&lt;/h1&gt;
+        &lt;p&gt;Posted by John Doe&lt;/p&gt;
+        &lt;p&gt;Some additional information here&lt;/p&gt;
+        &lt;hr&gt;
+    &lt;/header&gt;
+    &lt;p&gt;Lorem Ipsum dolor set amet....&lt;/p&gt;
+&lt;/article&gt;
+                        </code></pre>
+                    </div>
+                    <button id="open-modal" onclick="openExample()">Testar exemplo</button>
+                    <dialog id="modal">
+                        <div id="close-modal">
+                            <h2 class="green-background" >Exemplo</h2>
+                            <i class="fa-solid fa-xmark" onclick="closeExample()"></i>
+                        </div>
+                        <div class="left-side modal-div">
+                            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Tag header&lt;/h1&gt;
+
+&lt;article&gt;
+    &lt;header&gt;
+        &lt;h1&gt;A heading here&lt;/h1&gt;
+        &lt;p&gt;Posted by John Doe&lt;/p&gt;
+        &lt;p&gt;Some additional information here&lt;/p&gt;
+        &lt;hr&gt;
+    &lt;/header&gt;
+    &lt;p&gt;Lorem Ipsum dolor set amet....&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                        </div>
+                        <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
+                        <div class="right-side modal-div">
+                            <h1>Tag header</h1>
+
+                            <article>
+                                    <h1>A heading here</h1>
+                                    <p>Posted by John Doe</p>
+                                    <p>Some additional information here</p>
+                                    <hr>
+                                <p>Lorem Ipsum dolor set amet....</p>
+                            </article>
+                        </div>
+                    </dialog>
+                </div>
+                <div class="atributos">
+                    <h2 class="green-background">
+                        Atributos
+                    </h2>
+                    <p>Esta tag suporta apenas <a href="../atributes.html">Atributos Globais.</a></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="../references.html">
+                        <span class="footer-icons"><i class="fa-solid fa-code"></i></span>
+                        <span class="footer-links">Tags HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../browsers">
+                        <span class="footer-icons"><i class="fa-brands fa-chrome"></i>
+                        </span><span class="footer-links">Suporte dos navegadores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../atributes">
+                        <span class="footer-icons"><i class="fa-solid fa-earth-americas"></i></span>
+                        <span class="footer-links">Atributos globais</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">
+                        <span class="footer-icons"><i class="fa-solid fa-user-group footer-icons"></i></span>
+                        <span class="footer-links">Sobre Nós</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="footer-description">
+                <p>IFNMG - Campus Montes Claros</p>
+                <p>Desenvolvimento WEB</p>
+                <p>&copy;2023 - <a href="#">Equipe 4</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

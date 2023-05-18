@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag details</title>
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/tags.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+                <h1><a href="../../index.html">Projeto WEB</a></h1>
+        
+                <nav>
+                    <ul>
+        
+                        <li onclick="handleDropdonwMenuReferencesClick()">
+                            <span>Referências</span> <i class="fa-solid fa-angle-down" id="references-menu-icon">
+                        </i>
+                        </li>
+                        <li id="references">
+                            <ul>
+                                <li>
+                                    <a href="../references.html">
+                                        <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../browsers">
+                                        <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../atributes">
+                                        <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../about.html">Sobre nós</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>
+                    <i class="fa-solid fa-bars" id="menu-icon"
+                    onclick="handleDropdonwMenuClick('header nav', '#menu-icon')"></i>
+                </p>
+        </header>
+        <main>
+            <section class="wrapper">
+                <div id="title">
+                    <p id="back">
+                        <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Voltar</span></a>
+                    </p>
+                    <h1 class="green-background" >Tag &lt;details&gt;</h1>
+                    <p id="nextPrevious">
+                        <a href="./datalist.html" id="previous">Anterior</a>
+                        <span>|</span>
+                        <a href="./dialog.html" id="next">Próximo</a>
+                    </p>
+                </div>
+                <div class="definicoes">
+                    <h2 class="green-background">
+                        Definições e uso
+                    </h2>
+                    <p>
+A tag &lt;details&gt; especifica detalhes adicionais que o usuário pode abrir e fechar de acordo com sua demanda
+<br><br>
+A tag &lt;details&gt; é normalmente usada para criar um widget que o usuário possa abrir e fechar. Por padrão, o widget é mantido fechado. Quando aberto, ele se expande, e revela o conteúdo mantido dentro.
+<br><br>                            
+Qualquer conteúdo pode ser colocado dentro da tag &lt;details&gt;
+ <br><br>                           
+Dica: A tag &lt;summary&gt; é usada em conjunção com a tag &lt;details&gt; a fim de especificar um cabeçalho visível para os detalhes
+                            
+                    </p>
+                </div>
+                <div class="exemplos">
+                    <h2 class="green-background">
+                        Exemplos
+                    </h2>
+                    <div class="codigo">
+                        <pre><code>
+&lt;details&gt;
+  &lt;summary&gt;Epcot Center&lt;/summary&gt;
+  &lt;p&gt;
+Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+  &lt;/p&gt;
+&lt;/details&gt;
+                        </code></pre>
+                    </div>
+                    <button id="open-modal" onclick="openExample()">Testar exemplo</button>
+                    <dialog id="modal">
+                        <div id="close-modal">
+                            <h2 class="green-background" >Exemplo</h2>
+                            <i class="fa-solid fa-xmark" onclick="closeExample()"></i>
+                        </div>
+                        <div class="left-side modal-div">
+                            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Tag details&lt;/h1&gt;
+
+&lt;details&gt;
+  &lt;summary&gt;Epcot Center&lt;/summary&gt;
+  &lt;p&gt;
+Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+  &lt;/p&gt;
+&lt;/details&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                        </div>
+                        <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
+                        <div class="right-side modal-div">
+                            <details>
+                                <summary>Epcot Center</summary>
+                                <p>
+                                    Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+                                </p>
+                            </details>
+                        </div>
+                    </dialog>
+                </div>
+                <div class="atributos">
+                    <h2 class="green-background">
+                        Atributos
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="td-atributos">Atributo</th>
+                                <th class="td-valor">Valor</th>
+                                <th class="td-descricao">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-atributos"><span>Open</span></td>
+                                <td class="td-valor">Open</td>
+                                <td class="td-descricao">Especifica que os detalhes devem ser visíveis (abertos) para o usuário</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Esta tag também suporta <a href="../atributes.html">Atributos Globais.</a></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="../references.html">
+                        <span class="footer-icons"><i class="fa-solid fa-code"></i></span>
+                        <span class="footer-links">Tags HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../browsers">
+                        <span class="footer-icons"><i class="fa-brands fa-chrome"></i>
+                        </span><span class="footer-links">Suporte dos navegadores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../atributes">
+                        <span class="footer-icons"><i class="fa-solid fa-earth-americas"></i></span>
+                        <span class="footer-links">Atributos globais</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">
+                        <span class="footer-icons"><i class="fa-solid fa-user-group footer-icons"></i></span>
+                        <span class="footer-links">Sobre Nós</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="footer-description">
+                <p>IFNMG - Campus Montes Claros</p>
+                <p>Desenvolvimento WEB</p>
+                <p>&copy;2023 - <a href="#">Equipe 4</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
