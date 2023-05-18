@@ -3,7 +3,8 @@
   <a href="#description">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#functionalities">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#access">Acesso</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#layout">WireFrame</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licenca">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologies">Tenologias</a>
 </p>
 <p align="center">
@@ -11,7 +12,7 @@
 </p>
 <br>
 <div align="center">
-    <img max-height="400em" src="assets/capa-projeto-cep.png" alt="diagrama-uml">
+    <img max-height="400em" src="./assets/globals/preview-do-site.png" alt="imagem da home do projeto">
 </div>
 
 
@@ -27,7 +28,7 @@ Desenvolvimento Web, bem como pode compor portfólio de desenvolvedor.<p>
 <ul>
     <li>Todo o designer do projeto foi feito pela nossa equipe de designer.</li>
     <li>As páginas seguem um header e um footer padrão.</li>
-    <li>No header e no footer temos menus que nos levam para as outras páginas de acordo com o <a href="#">Menu de Navegação</a></li>
+    <li>No header e no footer temos menus que nos levam para as outras páginas de acordo com o <a href="https://octopus.do/nsbzqxa6c0q" target="_blank">Mapa de Navegação</a></li>
     <li>Na página inicial temos o nome do projeto, as ferramentas que utilizamos e um direcionamento para á página sobre onde mostra a nossa equipe.</li>
     <li>No menu do header temos as opções References e Sobre. A References abre um menu com mais opções:
       <ul>
@@ -38,14 +39,16 @@ Desenvolvimento Web, bem como pode compor portfólio de desenvolvedor.<p>
       <li>Página Sobre: leva para a página que mostra a nossa equipe de desenvolvedores.</li>
 </ul>
 
-<div align="center">
-    <img src="assets/gif-tela-projeto.gif">
-</div>
-
 <h2 id="access">&#X1F4C1 Acesso ao projeto</h2>
 
 <p>O Projeto WebDev está hospedado via GitHub Pages no link <a href="https://dkat-davi.github.io/TCE-Web-Dev/" target="_blank">https://dkat-davi.github.io/TCE-Web-Dev/</a><p>
 
+<h2 id="layout">🔖 WireFrame</h2> 
+<p>No nosso projeto, seguimos o designer projetados pela nossa equipe. Disponível a partir <a href="https://www.figma.com/file/zUAOn38wqBeFkyUnJA4dAV/Untitled?type=design&node-id=237%3A547&t=bvYWGcs4CTQ1U0d1-1" target="_blank">deste link</a><p>
+
+<h2 id="licenca">📝 Licença</h2> 
+
+Esse projeto está sob a licença <a href="https://github.com/dkat-davi/TCE-Web-Dev/blob/main/LICENSE" target="_blank">Projeto WebDev</a>
 
 <h2 id="tecnologies">&#X2714 Técnicas e Tecnologias utilizadas</h2>
 <ul>
