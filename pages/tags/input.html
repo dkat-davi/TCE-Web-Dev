@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag input</title>
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/tags.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../../assets/globals/favicon.ico" type="image/x-icon">
+
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+          <div class="header-title">
+            <a href="../../index.html">
+                <img src="../../assets/globals/logo.png" alt="logo" width="50rem">
+                <h1>Projeto WebDev</h1>
+            </a>
+          </div>
+        
+                <nav>
+                    <ul>
+        
+                        <li onclick="handleDropdonwMenuReferencesClick()">
+                            <span>Referências</span> <i class="fa-solid fa-angle-down" id="references-menu-icon">
+                        </i>
+                        </li>
+                        <li id="references">
+                            <ul>
+                                <li>
+                                    <a href="../references.html">
+                                        <i class="fa-solid fa-code"></i> <span>Tags HTML</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../browsers">
+                                        <i class="fa-brands fa-chrome"></i> <span>Suporte dos navegadores</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../atributes">
+                                        <i class="fa-solid fa-earth-americas"></i> <span>Atributos globais</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../about.html">Sobre nós</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>
+                    <i class="fa-solid fa-bars" id="menu-icon"
+                    onclick="handleDropdonwMenuClick('header nav', '#menu-icon')"></i>
+                </p>
+        </header>
+        <main>
+            <section class="wrapper">
+                <div id="title">
+                    <p id="back">
+                        <a href="../references.html"><i class="fa-solid fa-angle-left" id="references-menu-icon"></i><span id="text">Tags</span></a>
+                    </p>
+                    <h1 class="green-background" >Tag &lt;input&gt;</h1>
+                    <p id="nextPrevious">
+                        <a href="./button.html" id="previous">Anterior</a>
+                        <span>|</span>
+                        <a href="./code.html" id="next">Próximo</a>
+                    </p>
+                </div>
+                <div class="definicoes">
+                    <h2 class="green-background">
+                        Definições e uso
+                    </h2>
+                    <p>
+                        A tag &lt;input&gt; especifica um campo de input onde o usuário pode inserir dados <br><br>
+                        O elemento &lt;input&gt; é o elemento mais importante do elemento form <br><br>
+                        O elemento &lt;input&gt; pode ser mostrado de vários maneiras, dependendo do atributo <i>type</i> <br><br>
+                        Os diferentes tipos de inputs são os seguintes: <br> <br>
+                    </p>
+                    <ul style="margin-left: 5rem;">
+
+                      <li>&lt;input type="button"&gt;</li>
+                      <li>&lt;input type="checkbox"&gt;</li>
+                      <li>&lt;input type="color"&gt;</li>
+                      <li>&lt;input type="date"&gt;</li>
+                      <li>&lt;input type="datetime-local"&gt;</li>
+                      <li>&lt;input type="email"&gt;</li>
+                      <li>&lt;input type="file"&gt;</li>
+                      <li>&lt;input type="hidden"&gt;</li>
+                      <li>&lt;input type="image"&gt;</li>
+                      <li>&lt;input type="month"&gt;</li>
+                      <li>&lt;input type="password"&gt;</li>
+                      <li>&lt;input type="radio"&gt;</li>
+                      <li>&lt;input type="range"&gt;</li>
+                      <li>&lt;input type="reset"&gt;</li>
+                      <li>&lt;input type="search"&gt;</li>
+                      <li>&lt;input type="submit"&gt;</li>
+                      <li>&lt;input type="tel"&gt;</li>
+                      <li>&lt;input type="text"&gt; (valor padrão)</li>
+                      <li>&lt;input type="time"&gt;</li>
+                      <li>&lt;input type="url"&gt;</li>
+                      <li>&lt;input type="week"&gt;</li>
+                    </ul>
+                </div>
+                <div class="exemplos">
+                    <h2 class="green-background">
+                        Exemplos
+                    </h2>
+                    <div class="codigo">
+                        <pre><code>
+&lt;form action="/action_page.php"&gt;
+  &lt;label for="fname"&gt;First name:&lt;/label&gt;
+  &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+  &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+  &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+                        </code></pre>
+                    </div>
+                    <button id="open-modal" onclick="openExample()">Testar exemplo</button>
+                    <dialog id="modal">
+                        <div id="close-modal">
+                            <h2 class="green-background" >Exemplo</h2>
+                            <i class="fa-solid fa-xmark" onclick="closeExample()"></i>
+                        </div>
+                        <div class="left-side modal-div">
+                            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Tag input&lt;/h1&gt;
+
+&lt;form action="/action_page.php"&gt;
+  &lt;label for="fname"&gt;First name:&lt;/label&gt;
+  &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+  &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+  &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                        </div>
+                        <h2 id="exemplo-resultado" class="green-background">Resultado</h2>
+                        <div class="right-side modal-div">
+                            <h1>Tag input</h1>
+
+                            <form>
+                              <label for="fname">First name:</label>
+                              <input type="text" id="fname" name="fname"><br><br>
+                              <label for="lname">Last name:</label>
+                              <input type="text" id="lname" name="lname"><br><br>
+                              <input type="submit" value="Submit">
+                            </form>
+
+                        </div>
+                    </dialog>
+                </div>
+                <div class="atributos">
+                    <h2 class="green-background">
+                        Atributos
+                    </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="td-atributos">Atributo</th>
+                                <th class="td-valor">Valor</th>
+                                <th class="td-descricao">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-atributos"><span>accept</span></td>
+                                <td class="td-valor">
+                                  file_extension <br>
+                                  audio/* <br>
+                                  video/* <br>
+                                  image/* <br>
+                                  media_type
+                                </td>
+                                <td class="td-descricao">Especifica um filtro para quais tipos de arquivo o usuário pode escolher na caixa de diálogo de entrada de arquivo</td>
+                            </tr>
+                            <tr>
+                                <td class="td-atributos">alt</td>
+                                <td class="td-valor">text</td>
+                                <td class="td-descricao">Especifica um texto alternativo para imagens</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">autocomplete</td>
+                              <td class="td-valor">on <br> off</td>
+                              <td class="td-descricao">Especifica se um elemento &lt;input&gt; deve ter o preenchimento automático ativado</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">autofocus</td>
+                              <td class="td-valor">autofocus</td>
+                              <td class="td-descricao">Especifica que um elemento &lt;input&gt; deve obter foco automaticamente quando a página for carregada</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">checked</td>
+                              <td class="td-valor">checked</td>
+                              <td class="td-descricao">Especifica que um elemento &lt;input&gt; deve ser pré-selecionado quando a página for carregada</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">dirname</td>
+                              <td class="td-valor">	form_id</td>
+                              <td class="td-descricao">Especifica que a direção o texto será enviada</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">formaction</td>
+                              <td class="td-valor">URL</td>
+                              <td class="td-descricao">Especifica a URL do arquivo que processará o controle de entrada quando o formulário for enviado</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">formenctype</td>
+                              <td class="td-valor">
+                                application/x-www-form-urlencoded <br>
+                                multipart/form-data <br>
+                                text/plain
+                              </td>
+                              <td class="td-descricao">Especifica como os dados do formulário devem ser codificados ao enviá-los ao servidor</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">formmethod</td>
+                              <td class="td-valor">
+                                get <br>
+                                post
+                              </td>
+                              <td class="td-descricao">Define o método HTTP para enviar dados para a URL de ação</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">formnovalidate</td>
+                              <td class="td-valor">formnovalidate</td>
+                              <td class="td-descricao">Define que os elementos do formulário não devem ser validados quando enviados</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">formtarget</td>
+                              <td class="td-valor">formtarget</td>
+                              <td class="td-descricao">Especifica onde exibir a resposta recebida após o envio do formulário</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">height</td>
+                              <td class="td-valor">	pixels</td>
+                              <td class="td-descricao">Specifies the height of an &lt;input&gt; element</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">list</td>
+                              <td class="td-valor">datalist_id</td>
+                              <td class="td-descricao">Refere-se a um elemento &lt;datalist&gt; que contém opções predefinidas para um elemento &lt;input&gt;</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">max</td>
+                              <td class="td-valor">
+                                number <br>
+                                date <br>
+                              </td>
+                              <td class="td-descricao">Especifica o valor máximo para um elemento &lt;inpu&gt;</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">maxlength</td>
+                              <td class="td-valor">number</td>
+                              <td class="td-descricao">Especifica o número máximo de caracteres permitidos em um elemento &lt;input&gt;</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">min</td>
+                              <td class="td-valor">number</td>
+                              <td class="td-descricao">Especifica um valor mínimo para um elemento &lt;input&gt;</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">minlength</td>
+                              <td class="td-valor">number</td>
+                              <td class="td-descricao">Especifica o número mínimo de caracteres necessários em um elemento &lt;input&gt;</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">multiple</td>
+                              <td class="td-valor">multiple</td>
+                              <td class="td-descricao">Especifica que um usuário pode inserir mais de um valor em um elemento &lt;input&gt;</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">name</td>
+                              <td class="td-valor">	text</td>
+                              <td class="td-descricao">Especifica o nome de um elemento &lt;input&gt;</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">pattern</td>
+                              <td class="td-valor">regexp</td>
+                              <td class="td-descricao">Especifica uma expressão regular em que o valor de um elemento &lt;input&gt; é verificado</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">placeholder</td>
+                              <td class="td-valor">	text</td>
+                              <td class="td-descricao">Especifica uma dica curta que descreve o valor esperado de um elemento &lt;input&gt;</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">readonly</td>
+                              <td class="td-valor">readonly</td>
+                              <td class="td-descricao">Especifica que um campo de entrada é somente leitura</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">required</td>
+                              <td class="td-valor">required</td>
+                              <td class="td-descricao">Especifica que um campo de entrada deve ser preenchido antes de enviar o formulário</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">size</td>
+                              <td class="td-valor">number</td>
+                              <td class="td-descricao">Especifica a largura, em caracteres, de um elemento &lt;input&gt;</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">src</td>
+                              <td class="td-valor">URL</td>
+                              <td class="td-descricao">Especifica a URL da imagem a ser usada como um botão de envio</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">step</td>
+                              <td class="td-valor">
+                                number <br>
+                                any
+                              </td>
+                              <td class="td-descricao">Especifica o intervalo entre números legais em um campo de entrada</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">type</td>
+                              <td class="td-valor">
+                                button <br>
+                                checkbox <br>
+                                color <br>
+                                date <br>
+                                datetime-local <br>
+                                email <br>
+                                file <br>
+                                hidden <br>
+                                image <br>
+                                month <br>
+                                number <br>
+                                password <br>
+                                radio <br>
+                                range <br>
+                                reset <br>
+                                search <br>
+                                submit <br>
+                                tel <br>
+                                text <br>
+                                time <br>
+                                url <br>
+                                week 
+                              </td>
+                              <td class="td-descricao">Especifica o tipo de elemento &lt;input&gt; a ser exibido</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">value</td>
+                              <td class="td-valor">text</td>
+                              <td class="td-descricao">Especifica o valor de um elemento &lt;input&gt;</td>
+                            </tr>
+                            <tr>
+                              <td class="td-atributos">width</td>
+                              <td class="td-valor">pixels</td>
+                              <td class="td-descricao">Especifica a largura de um elemento &lt;input&gt;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Esta tag também suporta <a href="../atributes.html">Atributos Globais.</a></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="../references.html">
+                        <span class="footer-icons"><i class="fa-solid fa-code"></i></span>
+                        <span class="footer-links">Tags HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../browsers">
+                        <span class="footer-icons"><i class="fa-brands fa-chrome"></i>
+                        </span><span class="footer-links">Suporte dos navegadores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../atributes">
+                        <span class="footer-icons"><i class="fa-solid fa-earth-americas"></i></span>
+                        <span class="footer-links">Atributos globais</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">
+                        <span class="footer-icons"><i class="fa-solid fa-user-group footer-icons"></i></span>
+                        <span class="footer-links">Sobre Nós</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="footer-description">
+                <p>IFNMG - Campus Montes Claros</p>
+                <p>Desenvolvimento WEB</p>
+                <p>&copy;2023 - <a href="#">Equipe 4</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
